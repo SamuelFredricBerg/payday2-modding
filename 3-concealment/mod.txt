@@ -1,0 +1,13 @@
+{
+	"name" : "3-concealment",
+	"description" : "",
+	"author" : "",
+	"blt_version" : 2,
+
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/managers/blackmarketmanager",
+			"script_path" : "code.lua"
+		}
+	]
+}

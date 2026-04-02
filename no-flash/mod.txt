@@ -1,0 +1,13 @@
+{
+	"name" : "no-flash",
+	"description" : "",
+	"author" : "",
+	"blt_version" : 2,
+
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/tweak_data/charactertweakdata",
+			"script_path" : "code.lua"
+		}
+	]
+}

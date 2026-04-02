@@ -1,0 +1,13 @@
+{
+	"name" : "god-mode-dodge",
+	"description" : "",
+	"author" : "",
+	"blt_version" : 2,
+
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/units/beings/player/playerdamage",
+			"script_path" : "code.lua"
+		}
+	]
+}

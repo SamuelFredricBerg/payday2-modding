@@ -1,0 +1,25 @@
+{
+    "name" : "meth-helper",
+    "description" : "",
+    "author" : "",
+	"blt_version" : 2,
+	
+    "hooks" : [
+		{
+			"hook_id" : "lib/managers/DialogManager"
+			"script_path" : "code.lua"
+		}
+    ],
+
+	"keybinds" : [
+		{
+			"keybind_id" : "MH-GUI_keybind",
+			"name" : "Meth Helper Activate/Deactivate",
+			"description" : "Activate/Deactivate Meth Helper",
+			"script_path" : "code1.lua",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"localized" : false
+		}
+	]
+}

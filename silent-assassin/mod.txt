@@ -1,0 +1,38 @@
+{
+	"name" : "silent-assassin",
+	"description" : "",
+	"author" : "",
+	"blt_version" : 2,
+
+	"priority" : 14,
+	"hooks" : [
+		{ 
+			"hook_id" : "lib/units/enemies/cop/copbrain",
+		  	"script_path" : "code.lua" 
+		},
+		{ 
+			"hook_id" : "lib/tweak_data/playertweakdata",
+		  	"script_path" : "code.lua" 
+		},
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "code.lua" 
+		},
+		{ 
+			"hook_id" : "lib/managers/jobmanager",
+			"script_path" : "code.lua" 
+		},
+		{ 
+			"hook_id" : "lib/managers/crimespreemanager",
+		  	"script_path" : "code.lua" 
+		},
+		{ 
+			"hook_id" : "lib/network/matchmaking/networkmatchmakingsteam",
+		  	"script_path" : "code.lua" 
+		},
+		{ 
+			"hook_id" : "lib/units/interactions/interactionext",
+		  	"script_path" : "code.lua" 
+		}
+	]
+}

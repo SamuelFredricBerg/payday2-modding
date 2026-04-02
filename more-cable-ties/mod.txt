@@ -1,0 +1,13 @@
+{
+	"name":	"more-cable-ties",
+	"description":	"",
+	"author":	"",
+	
+	"priority":	"1000",
+	"hooks": [
+		{
+			"hook_id" : "lib/tweak_data/upgradestweakdata",
+			"script_path" : "code.lua"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"name" : "modding-detection-off",
+	"description" : "",
+	"author" : "",
+	"blt_version" : 2,
+
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "code.lua"
+		}
+	]
+}

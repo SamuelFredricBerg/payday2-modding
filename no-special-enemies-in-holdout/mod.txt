@@ -1,0 +1,13 @@
+{
+	"name" : "no-special-enemies-in-holdout",
+	"description" : "",
+	"author" : "",
+	"blt_version" : 2,
+
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/tweak_data/skirmishtweakdata",
+			"script_path" : "code.lua"
+		}
+	]
+}

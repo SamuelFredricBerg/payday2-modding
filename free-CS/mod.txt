@@ -1,0 +1,13 @@
+{
+	"name" : "free-CS",
+	"description" : "",
+	"author" : "",
+	"blt_version" : 2,
+
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/tweak_data/crimespreetweakdata",
+			"script_path" : "code.lua"
+		}
+	]
+}

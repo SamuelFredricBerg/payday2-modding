@@ -1,0 +1,13 @@
+{
+	"name" : "infinite-stamina",
+	"description" : "",
+	"author" : "",
+	"blt_version" : 2,
+
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/tweak_data/playertweakdata",
+			"script_path" : "code.lua"
+		}
+	]
+}
