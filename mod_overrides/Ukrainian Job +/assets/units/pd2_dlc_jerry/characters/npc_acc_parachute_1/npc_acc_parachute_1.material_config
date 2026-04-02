@@ -1,0 +1,6 @@
+<materials version="3">
+    <material name="mtr_bag" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" version="2">
+        <diffuse_texture file="units/pd2_dlc_jerry/pickups/gen_pku_parachute_bag/gen_pku_parachute_bag_df"/>
+        <bump_normal_texture file="units/pd2_dlc_jerry/pickups/gen_pku_parachute_bag/gen_pku_parachute_bag_nm"/>
+    </material>
+</materials>

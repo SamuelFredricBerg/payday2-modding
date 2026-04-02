@@ -1,0 +1,602 @@
+<table>
+	<editor_groups>
+		<table continent="pc_only" name="antenas_01" reference="300000">
+			<units>
+				<value_node value="300000"/>
+				<value_node value="300001"/>
+				<value_node value="300002"/>
+				<value_node value="300003"/>
+				<value_node value="300004"/>
+				<value_node value="300005"/>
+				<value_node value="300006"/>
+				<value_node value="300007"/>
+				<value_node value="300008"/>
+				<value_node value="300009"/>
+				<value_node value="300010"/>
+				<value_node value="300011"/>
+				<value_node value="300012"/>
+				<value_node value="300013"/>
+				<value_node value="300014"/>
+				<value_node value="300015"/>
+				<value_node value="300016"/>
+				<value_node value="300017"/>
+				<value_node value="300018"/>
+				<value_node value="300019"/>
+			</units>
+		</table>
+		<table continent="pc_only" name="baristastuff_01" reference="300020">
+			<units>
+				<value_node value="300020"/>
+				<value_node value="300021"/>
+				<value_node value="300022"/>
+				<value_node value="300023"/>
+				<value_node value="300024"/>
+				<value_node value="300025"/>
+				<value_node value="300026"/>
+				<value_node value="300027"/>
+				<value_node value="300028"/>
+				<value_node value="300029"/>
+				<value_node value="300030"/>
+				<value_node value="300031"/>
+			</units>
+		</table>
+		<table continent="pc_only" name="coffe?01" reference="300046">
+			<units>
+				<value_node value="300046"/>
+				<value_node value="300047"/>
+				<value_node value="300048"/>
+				<value_node value="300049"/>
+				<value_node value="300050"/>
+				<value_node value="300051"/>
+				<value_node value="300052"/>
+				<value_node value="300053"/>
+				<value_node value="300054"/>
+				<value_node value="300055"/>
+				<value_node value="300056"/>
+				<value_node value="300057"/>
+				<value_node value="300058"/>
+				<value_node value="300059"/>
+				<value_node value="300060"/>
+				<value_node value="300061"/>
+				<value_node value="300062"/>
+				<value_node value="300063"/>
+				<value_node value="300064"/>
+				<value_node value="300065"/>
+			</units>
+		</table>
+		<table continent="pc_only" name="ventz_02" reference="300074">
+			<units>
+				<value_node value="300074"/>
+				<value_node value="300075"/>
+				<value_node value="300079"/>
+				<value_node value="300085"/>
+				<value_node value="300087"/>
+				<value_node value="300088"/>
+			</units>
+		</table>
+		<table continent="pc_only" name="snop_props_01" reference="300081">
+			<units>
+				<value_node value="300081"/>
+				<value_node value="300082"/>
+				<value_node value="300106"/>
+				<value_node value="300131"/>
+				<value_node value="300132"/>
+				<value_node value="300133"/>
+				<value_node value="300134"/>
+				<value_node value="300135"/>
+				<value_node value="300136"/>
+				<value_node value="300137"/>
+				<value_node value="300138"/>
+				<value_node value="300139"/>
+				<value_node value="300140"/>
+				<value_node value="300141"/>
+				<value_node value="300142"/>
+				<value_node value="300143"/>
+				<value_node value="300144"/>
+				<value_node value="300145"/>
+				<value_node value="300146"/>
+				<value_node value="300147"/>
+				<value_node value="300148"/>
+				<value_node value="300149"/>
+				<value_node value="300150"/>
+				<value_node value="300151"/>
+				<value_node value="300152"/>
+				<value_node value="300153"/>
+				<value_node value="300154"/>
+				<value_node value="300155"/>
+			</units>
+		</table>
+		<table continent="pc_only" name="decal_01" reference="300080">
+			<units>
+				<value_node value="300080"/>
+				<value_node value="300156"/>
+				<value_node value="300157"/>
+				<value_node value="300158"/>
+				<value_node value="300159"/>
+				<value_node value="300160"/>
+			</units>
+		</table>
+	</editor_groups>
+	<statics>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_001" position="2275 -1875 825" rotation="0 0 0.991445 -0.130526" unit_id="300000"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_002" position="1771.97 5603.03 1672" rotation="0 0 0.923879 -0.382684" unit_id="300001"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_003" position="1137.96 7776.97 1314" rotation="0 0 0.382683 -0.92388" unit_id="300002"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_004" position="-450.004 4500 1650" rotation="0 0 -0.382683 -0.92388" unit_id="300003"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_005" position="1750 -3075 1225" rotation="0 0 -0.707107 -0.707107" unit_id="300004"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_006" position="-2125 -3000 1225" rotation="0 0 -0.382683 -0.92388" unit_id="300005"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_007" position="2045.03 3166.03 1709" rotation="0 0 0.92388 0.382683" unit_id="300006"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_008" position="1580.31 1094.2 1379" rotation="0 0 -0.707107 -0.707106" unit_id="300007"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_009" position="-956.587 -928.035 1252" rotation="0 0 7.45058e-007 -1" unit_id="300008"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_010" position="546.966 -318.415 1252" rotation="0 0 0.707107 -0.707106" unit_id="300009"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_011" position="1546.97 -618.415 1252" rotation="0 0 0.707107 -0.707106" unit_id="300010"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_4" name_id="secret_stash_antenna_4_001" position="1975 -3050 1225" rotation="0 0 -0.382683 -0.92388" unit_id="300011"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_4" name_id="secret_stash_antenna_4_002" position="1850 -3150 1225" rotation="0 0 1 -1.19209e-007" unit_id="300012"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_4" name_id="secret_stash_antenna_4_003" position="-1975 -2925 1198" rotation="0 0 7.45058e-007 -1" unit_id="300013"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_4" name_id="secret_stash_antenna_4_004" position="-1900 -2750 1198" rotation="0 0 0.923879 -0.382684" unit_id="300014"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_4" name_id="secret_stash_antenna_4_005" position="-1803 -1986 825" rotation="0 0 -0.382684 -0.923879" unit_id="300015"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_4" name_id="secret_stash_antenna_4_006" position="-1728 -1811 825" rotation="0 0 1 7.59959e-007" unit_id="300016"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_4" name_id="secret_stash_antenna_4_007" position="-797.487 -981.068 1225" rotation="0 0 0.382684 -0.923879" unit_id="300017"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_4" name_id="secret_stash_antenna_4_008" position="1564.64 -954.289 1225" rotation="0 0 -0.707107 -0.707106" unit_id="300018"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_4" name_id="secret_stash_antenna_4_009" position="1493.93 -777.513 1225" rotation="0 0 0.923879 -0.382684" unit_id="300019"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/western/wst_prop_int_chair/wst_prop_int_chair" name_id="wst_prop_int_chair_001" position="1625 1000 23.7205" rotation="-4.09782e-008 -3.38769e-007 1 3.12924e-007" unit_id="300020"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_counters/com_prop_barista_table_a_50" name_id="com_prop_barista_table_a_50_001" position="1625 950 26.0003" rotation="-3.42727e-007 4.09782e-008 3.59491e-007 -1" unit_id="300021"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/western/wst_prop_int_chair/wst_prop_int_chair" name_id="wst_prop_int_chair_002" position="1621 875 23.7204" rotation="-3.42727e-007 4.09782e-008 3.59491e-007 -1" unit_id="300022"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/western/wst_prop_int_chair/wst_prop_int_chair" name_id="wst_prop_int_chair_003" position="1771 875 23.7204" rotation="-3.42727e-007 4.09782e-008 3.59491e-007 -1" unit_id="300023"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_counters/com_prop_barista_table_a_50" name_id="com_prop_barista_table_a_50_002" position="1775 950 26.0004" rotation="-3.42727e-007 4.09782e-008 3.59491e-007 -1" unit_id="300024"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/western/wst_prop_int_chair/wst_prop_int_chair" name_id="wst_prop_int_chair_004" position="1800 1000 23.7205" rotation="-4.09782e-008 -3.38769e-007 1 3.12924e-007" unit_id="300025"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/western/wst_prop_int_chair/wst_prop_int_chair" name_id="wst_prop_int_chair_005" position="1925 1000 23.7205" rotation="-4.09782e-008 -3.38769e-007 1 3.12924e-007" unit_id="300026"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_counters/com_prop_barista_table_a_50" name_id="com_prop_barista_table_a_50_003" position="1925 950 26.0004" rotation="-3.42727e-007 4.09782e-008 3.59491e-007 -1" unit_id="300027"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/western/wst_prop_int_chair/wst_prop_int_chair" name_id="wst_prop_int_chair_006" position="1921 875 23.7204" rotation="-3.42727e-007 4.09782e-008 3.59491e-007 -1" unit_id="300028"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_pastry/com_prop_barista_pastry_big_cake" name_id="com_prop_barista_pastry_big_cake_001" position="1517.17 674.515 117.732" rotation="-2.98023e-007 1.6205e-007 -0.382684 -0.923879" unit_id="300029"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/hospital/props/styrofoamcups/hospital_styrofoam_cups_04" name_id="hospital_styrofoam_cups_04_001" position="1544 426 117.732" rotation="-2.68221e-007 -2.12342e-007 0.707107 -0.707107" unit_id="300030"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/hospital/props/styrofoamcups/hospital_styrofoam_cups_01" name_id="hospital_styrofoam_cups_01_001" position="1519 451 117.732" rotation="-2.68221e-007 -2.12342e-007 0.707107 -0.707107" unit_id="300031"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/suburbia_stool_bar/suburbia_stool_bar" name_id="suburbia_stool_bar_008" position="1625 1150 22.0004" rotation="0 0 -1.6292e-007 -1" unit_id="300032"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/suburbia_stool_bar/suburbia_stool_bar" name_id="suburbia_stool_bar_009" position="1725 1150 22.0004" rotation="0 0 -1.6292e-007 -1" unit_id="300033"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/suburbia_stool_bar/suburbia_stool_bar" name_id="suburbia_stool_bar_010" position="1850 1150 22.0004" rotation="0 0 -1.6292e-007 -1" unit_id="300034"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/suburbia_stool_bar/suburbia_stool_bar" name_id="suburbia_stool_bar_011" position="1950 1150 22.0004" rotation="0 0 -1.6292e-007 -1" unit_id="300035"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/cup/cup1" name_id="cup1_003" position="1650 1175 130" rotation="0 0 0.707107 -0.707107" unit_id="300036"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/cup/cup1" name_id="cup1_004" position="1250 825 130" rotation="0 0 0.707107 -0.707107" unit_id="300037"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/suburbia_stool_bar/suburbia_stool_bar" name_id="suburbia_stool_bar_001" position="1275 850 22.0004" rotation="0 0 -1.6292e-007 -1" unit_id="300038"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/suburbia_stool_bar/suburbia_stool_bar" name_id="suburbia_stool_bar_002" position="1275 750 22.0004" rotation="0 0 -1.6292e-007 -1" unit_id="300039"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/suburbia_stool_bar/suburbia_stool_bar" name_id="suburbia_stool_bar_003" position="1275 600 22.0004" rotation="0 0 -1.6292e-007 -1" unit_id="300040"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/yacht/tray/lxy_prop_ext_fruit_tray" name_id="lxy_prop_ext_fruit_tray_002" position="1443 653 117.732" rotation="0 0 0.707107 -0.707107" unit_id="300041"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/yacht/basket/lxy_prop_ext_fruit_basket" name_id="lxy_prop_ext_fruit_basket_002" position="1639 426 117.732" rotation="0 0 0.707107 -0.707107" unit_id="300042"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/equipment/gen_interactable_door_wooden/gen_interactable_door_wooden" name_id="gen_interactable_door_wooden_001" position="2020 626 26.0004" rotation="0 0 1 -9.91874e-007" unit_id="300043"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_gallery_paintings/com_prop_gallery_paintingrenaissance_large_2" name_id="com_prop_gallery_paintingrenaissance_large_2_002" position="2020 800 241.495" rotation="0 0 -0.707107 -0.707107" unit_id="300044"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_gallery_paintings/com_prop_gallery_paintingrenaissance_medium_1" name_id="com_prop_gallery_paintingrenaissance_medium_1_002" position="2025 1000 201.645" rotation="0 0 -0.707107 -0.707107" unit_id="300045"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_c" name_id="com_prop_barista_coffee_bag_c_001" position="1834.89 423.21 209.109" rotation="0 0 0.995554 0.0941959" unit_id="300046"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_c" name_id="com_prop_barista_coffee_bag_c_002" position="1835.84 422.758 185.109" rotation="0 0 -0.687229 -0.726441" unit_id="300047"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_c" name_id="com_prop_barista_coffee_bag_c_003" position="1825.7 421.622 185.109" rotation="0 0 0.879556 -0.475795" unit_id="300048"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_c" name_id="com_prop_barista_coffee_bag_c_004" position="1819 426 185.109" rotation="0 0 0.879556 -0.475795" unit_id="300049"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_c" name_id="com_prop_barista_coffee_bag_c_005" position="1822.12 425.648 209.109" rotation="0 0 0.955819 -0.293955" unit_id="300050"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_b" name_id="com_prop_barista_coffee_bag_b_001" position="1803.89 432.786 209.213" rotation="0 0 0.999975 -0.00708698" unit_id="300051"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_b" name_id="com_prop_barista_coffee_bag_b_002" position="1802.97 429.299 185.213" rotation="0 0 0.999975 -0.00708698" unit_id="300052"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_b" name_id="com_prop_barista_coffee_bag_b_003" position="1788.97 429.101 185.213" rotation="0 0 0.986428 -0.164192" unit_id="300053"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_b" name_id="com_prop_barista_coffee_bag_b_004" position="1789.89 432.587 209.213" rotation="0 0 0.986428 -0.164192" unit_id="300054"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_b" name_id="com_prop_barista_coffee_bag_b_005" position="1771.89 432.332 209.213" rotation="0 0 0.999975 -0.00708698" unit_id="300055"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_b" name_id="com_prop_barista_coffee_bag_b_006" position="1769 426 185.213" rotation="0 0 0.883224 -0.468951" unit_id="300056"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_b" name_id="com_prop_barista_coffee_bag_b_007" position="1759.89 432.162 185.213" rotation="0 0 0.956132 0.292935" unit_id="300057"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_b" name_id="com_prop_barista_coffee_bag_b_008" position="1759.89 432.162 209.213" rotation="0 0 0.992221 0.124491" unit_id="300058"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_a" name_id="com_prop_barista_coffee_bag_a_001" position="1724.02 429.974 185.21" rotation="0 0 0.999897 -0.0143419" unit_id="300059"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_a" name_id="com_prop_barista_coffee_bag_a_002" position="1709.02 429.544 185.21" rotation="0 0 0.969148 0.24648" unit_id="300060"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_a" name_id="com_prop_barista_coffee_bag_a_003" position="1696.06 430.777 185.21" rotation="0 0 0.657354 -0.753582" unit_id="300061"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_a" name_id="com_prop_barista_coffee_bag_a_004" position="1694.02 432.355 209.21" rotation="0 0 0.993458 -0.114195" unit_id="300062"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_a" name_id="com_prop_barista_coffee_bag_a_005" position="1681.29 425.282 209.21" rotation="0 0 0.993458 -0.114195" unit_id="300063"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_a" name_id="com_prop_barista_coffee_bag_a_006" position="1681.74 424.778 185.21" rotation="0 0 0.657354 -0.753582" unit_id="300064"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_coffee_bag/com_prop_barista_coffee_bag_a" name_id="com_prop_barista_coffee_bag_a_007" position="1659.15 430.827 185.21" rotation="0 0 0.94659 -0.322441" unit_id="300065"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_espressomachine/com_prop_barista_espressomachine" name_id="com_prop_barista_espressomachine_002" position="1790 448 117.732" rotation="0 0 1 -1.19209e-007" unit_id="300066"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_barista_signs/com_prop_barista_sign_b" name_id="com_prop_barista_sign_b_003" position="1220 911 119.84" rotation="-0.0370382 -0.021086 -0.390038 -0.919812" unit_id="300067"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/signs/sign_flag_long_05" name_id="sign_flag_long_05_003" position="-3500 4350 1130.55" rotation="0 0 0 -1" unit_id="300069"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/signs/sign_flag_long_05" name_id="sign_flag_long_05_004" position="-3500 5125 1130.55" rotation="0 0 0 -1" unit_id="300070"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/street/roof_addons/roof_antenna_far_02" name_id="roof_antenna_far_02_002" position="-4625 3075 1800" rotation="0 0 0.707107 -0.707107" unit_id="300071"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/street/roof_addons/roof_antenna_far_01" name_id="roof_antenna_far_01_002" position="-4625 2968 1498" rotation="0 0 0 -1" unit_id="300072"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/street/roof_addons/roof_antenna_far_03" name_id="roof_antenna_far_03_001" position="-4812 3062 1828" rotation="0 0 -0.382683 -0.92388" unit_id="300073"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_ductbox_mid_1" name_id="secret_stash_ductbox_mid_1_001" position="1702.97 -1225 640.2" rotation="0.999962 1.6122e-007 0.00872654 -4.39877e-008" unit_id="300074"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_ductbox_mid_1" name_id="secret_stash_ductbox_mid_1_002" position="417 4375 613.151" rotation="1 2.38482e-007 2.3283e-009 -4.23752e-008" unit_id="300075"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_ductbox_mid_1" name_id="secret_stash_ductbox_mid_1_006" position="1700 8025 763.783" rotation="-0.707107 0.707107 3.01034e-008 2.96377e-008" unit_id="300079"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_ductbox_mid_1" name_id="secret_stash_ductbox_mid_1_012" position="1603.19 -1225 634.46" rotation="0.999657 1.2384e-007 0.0261769 -4.69796e-008" unit_id="300085"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_ductbox_mid_1" name_id="secret_stash_ductbox_mid_1_014" position="1681 3925 1581.81" rotation="-0.707107 0.707107 3.01034e-008 2.96377e-008" unit_id="300087"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_ductbox_mid_2" name_id="secret_stash_ductbox_mid_2_001" position="1675 -3550 1145.57" rotation="3.9513e-008 9.65765e-008 -0.707107 -0.707107" unit_id="300088"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/lcm/lcm_ext_cannopy_c_2" name_id="lcm_ext_cannopy_c_2_001" position="-5125 2750 425" rotation="0 0 0.707107 -0.707107" unit_id="300089"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/lcm/lcm_ext_cannopy_c_2" name_id="lcm_ext_cannopy_c_2_002" position="-5925 2750 425" rotation="0 0 0.707107 -0.707107" unit_id="300090"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/lcm/lcm_ext_cannopy_c_2" name_id="lcm_ext_cannopy_c_2_003" position="-5625 1150 425" rotation="0 0 -0.707107 -0.707107" unit_id="300091"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/alaska/lumbermill/plank" name_id="plank_005" position="849.128 -35.962 1251" rotation="0 0 -0.707107 -0.707107" unit_id="300092"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/alaska/lumbermill/plank" name_id="plank_006" position="854.455 -106.937 1251" rotation="0 0 -0.717007 -0.697066" unit_id="300093"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/alaska/lumbermill/plank" name_id="plank_007" position="-1578.13 -633.04 1225.08" rotation="0.0312754 0.0304056 -0.716325 -0.696403" unit_id="300094"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/alaska/lumbermill/plank" name_id="plank_008" position="-1579 -720 1225" rotation="0.0308436 0.0308436 -0.706434 -0.706434" unit_id="300095"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_jewelry_bag/jewelry_bags_small_1" name_id="jewelry_bags_small_1_004" position="572 -1750 25" rotation="0 0 -0.707107 -0.707106" unit_id="300096"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_jewelry_bag/jewelry_bags_small_1" name_id="jewelry_bags_small_1_008" position="464 -1707 25" rotation="0 0 1 5.96046e-008" unit_id="300097"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_jewelry_bag/jewelry_shoeboxes" name_id="jewelry_shoeboxes_002" position="401 -1712 25" rotation="0 0 0.949818 -0.312803" unit_id="300098"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_corner_bend_1" name_id="pipe_thick_corner_bend_1_003" position="2163 -2876 330.261" rotation="0 0 0.707107 -0.707107" unit_id="300099"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_corner_bend_1" name_id="pipe_thick_corner_bend_1_004" position="2163 -2850 351.261" rotation="0 0 0.707107 -0.707107" unit_id="300100"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_corner_bend_1" name_id="pipe_thick_corner_bend_1_001" position="-1246 -2462 -126" rotation="0 -0.707107 0 -0.707107" unit_id="300101"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_corner_bend_1" name_id="pipe_thick_corner_bend_1_002" position="-1225 -2462 -100" rotation="0 -0.707107 0 -0.707107" unit_id="300102"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_corner_bend_1" name_id="pipe_thick_corner_bend_1_006" position="-1496 -50 763.045" rotation="0 0.707107 0 -0.707107" unit_id="300103"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/str_prop_street_sign_roof/str_prop_street_sign_roof" name_id="str_prop_street_sign_roof_001" position="-4025 750 1578.14" rotation="0 0 1 -5.96047e-008" unit_id="300068"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/str_prop_street_sign_roof/str_prop_street_sign_roof" name_id="str_prop_street_sign_roof_004" position="4350 750 1275" rotation="0 0 1 -5.96047e-008" unit_id="300104"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/str_prop_street_sign_roof/str_prop_street_sign_roof" name_id="str_prop_street_sign_roof_005" position="-3775 5500 1282.79" rotation="0 0 -0.707107 -0.707107" unit_id="300105"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_1_a" name_id="secret_stash_duct_1_a_057" position="-1143 -54 1059.23" rotation="-0.00617022 0.70708 0.00617002 -0.70708" unit_id="300107"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_1_a" name_id="secret_stash_duct_1_a_058" position="-1143 -50 809.302" rotation="-7.83238e-008 0.707107 2.08711e-008 -0.707107" unit_id="300108"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_1_a" name_id="secret_stash_duct_1_a_069" position="-1162 -50 824.052" rotation="-0.70091 1.13357e-007 -2.79397e-008 -0.71325" unit_id="300109"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_1_a" name_id="secret_stash_duct_1_a_070" position="-1412 -50 824.052" rotation="-0.70091 1.13357e-007 -2.79397e-008 -0.71325" unit_id="300110"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_1_a" name_id="secret_stash_duct_1_a_071" position="-1139 -380 892.301" rotation="-0.495618 0.504344 0.495618 -0.504344" unit_id="300111"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_1_a" name_id="secret_stash_duct_1_a_072" position="-1139 -630 892.301" rotation="-0.5 0.5 0.5 -0.5" unit_id="300112"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_1_a" name_id="secret_stash_duct_1_a_073" position="-1139 -879.93 888.302" rotation="-0.504344 0.495618 0.504344 -0.495618" unit_id="300113"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_1_a_curve" name_id="secret_stash_duct_1_a_curve_020" position="-1125 -50 542.301" rotation="-4.37114e-008 1 -1.72384e-008 7.93997e-008" unit_id="300114"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/str/str_ext_slab_parking_2m_01_a" name_id="str_ext_slab_parking_2m_01_a_006" position="925 2973 25.0002" rotation="0 0 0.700909 -0.71325" unit_id="300115"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/str/str_ext_slab_parking_2m_01_a" name_id="str_ext_slab_parking_2m_01_a_007" position="575 2975 25.0002" rotation="0 0 0.71934 -0.694658" unit_id="300116"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/str/str_ext_slab_parking_2m_01_a" name_id="str_ext_slab_parking_2m_01_a_008" position="-350 2975 25.0002" rotation="0 0 0.71325 -0.700909" unit_id="300117"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/str/str_ext_slab_parking_2m_01_a" name_id="str_ext_slab_parking_2m_01_a_009" position="-725 2975 25.0002" rotation="0 0 0.707107 -0.707107" unit_id="300118"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/str/str_ext_slab_parking_2m_01_a" name_id="str_ext_slab_parking_2m_01_a_010" position="-1075 2971 25.0002" rotation="0 0 0.713251 -0.700909" unit_id="300119"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/brushes/water_damage/water_damage_1" name_id="water_damage_1_007" position="-2 4348 657.06" rotation="-0.5 0.5 -0.5 -0.5" unit_id="300120"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/brushes/water_damage/water_damage_1" name_id="water_damage_1_001" position="1277 5489 588.397" rotation="0.707107 0 0.707107 -0" unit_id="300121"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/brushes/water_damage/water_damage_1" name_id="water_damage_1_005" position="877 516 388.927" rotation="0.5 -0.5 0.5 -0.5" unit_id="300122"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/brushes/water_damage/water_damage_1" name_id="water_damage_1_004" position="877 -1120 333.602" rotation="0.707107 0 0.707107 -0" unit_id="300123"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_3_a" name_id="secret_stash_duct_3_a_008" position="2250 -1220 452.645" rotation="-1.89661e-007 0.707107 -1.89661e-007 -0.707107" unit_id="300124"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_3_a" name_id="secret_stash_duct_3_a_009" position="2325 -1220 277.645" rotation="0 0 -2.68221e-007 -1" unit_id="300125"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_3_a" name_id="secret_stash_duct_3_a_010" position="2325 -1220 177.645" rotation="0 0 -2.68221e-007 -1" unit_id="300126"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_3_a" name_id="secret_stash_duct_3_a_011" position="2325 -1220 77.6448" rotation="0 0 -2.68221e-007 -1" unit_id="300127"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_duct_3_a_curve2a" name_id="secret_stash_duct_3_a_curve2a_003" position="2325 -1220 377.645" rotation="0 0 -2.68221e-007 -1" unit_id="300128"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/brushes/puddle/puddle_5" name_id="puddle_5_003" position="454 4208 27.0002" rotation="0 0 -0.707107 -0.707107" unit_id="300077"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/brushes/puddle/puddle_3" name_id="puddle_3_005" position="1090 2989 27" rotation="0 0 -0.707106 -0.707107" unit_id="300078"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/brushes/puddle/puddle_3" name_id="puddle_3_004" position="146 3765 27" rotation="0 0 -0.382683 -0.92388" unit_id="300129"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/com_prop_jewelry_bag/jewelry_bags_small_2" name_id="jewelry_bags_small_2_005" position="408.728 -1466.09 25" rotation="0 0 -0.831336 -0.55577" unit_id="300130"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/alaska/lumbermill/plank" name_id="plank_001" position="-69.0065 4925.19 1227.98" rotation="0.0958311 0.00167361 -0.017372 -0.995245" unit_id="300081"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/alaska/lumbermill/plank" name_id="plank_002" position="-99.9998 5000 1225" rotation="0.0871558 8.69344e-007 7.60577e-008 -0.996195" unit_id="300082"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_corner_bend_1" name_id="pipe_thick_corner_bend_1_005" position="-315 4864 1125" rotation="-0.5 -0.5 0.5 -0.5" unit_id="300106"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_corner_bend_1" name_id="pipe_thick_corner_bend_1_007" position="-315 4839 1175" rotation="-0.5 -0.5 0.5 -0.5" unit_id="300131"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/props/str_prop_decal_graffiti_clans/str_prop_decal_graffiti_clans_creatures" name_id="str_prop_decal_graffiti_clans_creatures_001" position="-325 4650 1427.89" rotation="0.707107 3.09086e-008 0.707107 -3.09086e-008" unit_id="300132"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/pd2_dlc1/props/str_prop_alley_graffiti/str_prop_decal_graffitti_derdontag" name_id="str_prop_decal_graffitti_derdontag_001" position="-325 5019 1481.34" rotation="0.521333 0.477715 0.521334 0.477714" unit_id="300133"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/brushes/water_damage/water_damage_1" name_id="water_damage_1_003" position="-321 5050 1300.47" rotation="0.707107 3.09086e-008 0.707107 -3.09086e-008" unit_id="300134"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_thinpipes_3" name_id="secret_stash_thinpipes_3_001" position="-325 5050 1295.46" rotation="6.17067e-007 6.17067e-007 -0.707107 -0.707107" unit_id="300135"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_medium_corner_1" name_id="pipe_medium_corner_1_001" position="200 5145 1225" rotation="-1.25608e-015 -0.707107 -1.25608e-015 -0.707107" unit_id="300136"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_medium_straight_2" name_id="pipe_medium_straight_2_001" position="-485 5144 1248" rotation="-1.25608e-015 -0.707107 -1.25608e-015 -0.707107" unit_id="300137"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_medium_straight_2" name_id="pipe_medium_straight_2_002" position="-493 5144 1238" rotation="-1.25608e-015 -0.707107 -1.25608e-015 -0.707107" unit_id="300138"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_medium_corner_1" name_id="pipe_medium_corner_1_002" position="190 5145 1215" rotation="-1.25608e-015 -0.707107 -1.25608e-015 -0.707107" unit_id="300139"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_thinpipes_1" name_id="secret_stash_thinpipes_1_001" position="400 5150 1283" rotation="-1.77636e-015 8.72665e-007 1.55017e-021 -1" unit_id="300140"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_sofa_1_pillow" name_id="secret_stash_sofa_1_pillow_001" position="456 5085 1225" rotation="1.59031e-007 8.58052e-007 0.182236 -0.983255" unit_id="300141"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/bottle/bottle_3" name_id="bottle_3_001" position="492.222 5002.12 1225" rotation="-1.64114e-015 6.79783e-016 -0.382683 -0.92388" unit_id="300142"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_sofa_1_a" name_id="secret_stash_sofa_1_a_002" position="592.143 5094.9 1225" rotation="-8.69974e-007 -6.84684e-008 0.996917 -0.078459" unit_id="300143"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_corner_bend_1" name_id="pipe_thick_corner_bend_1_008" position="911 5123 1271" rotation="-0.707107 6.17067e-007 -6.17067e-007 -0.707107" unit_id="300144"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_straight" name_id="pipe_thick_straight_003" position="911 5123 1271" rotation="0.5 0.5 0.500001 0.5" unit_id="300145"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_corner_bend_2" name_id="pipe_thick_corner_bend_2_001" position="1211 5123 1271" rotation="0.5 0.5 0.500001 0.5" unit_id="300146"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_straight" name_id="pipe_thick_straight_004" position="1286 5198 1271" rotation="-6.47976e-007 0.707107 0.707107 5.86159e-007" unit_id="300147"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_straight" name_id="pipe_thick_straight_005" position="1286 5485 1271" rotation="-6.47976e-007 0.707107 0.707107 5.86159e-007" unit_id="300148"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_straight" name_id="pipe_thick_straight_006" position="1286 5598 1271" rotation="-6.47976e-007 0.707107 0.707107 5.86159e-007" unit_id="300149"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/props/pipes/pipe_thick_corner_bend_2" name_id="pipe_thick_corner_bend_2_002" position="1286 5898 1271" rotation="-6.47976e-007 0.707107 0.707107 5.86159e-007" unit_id="300150"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_4" name_id="secret_stash_antenna_4_010" position="-800.005 5350.01 1622" rotation="-1.64114e-015 6.79783e-016 -0.382683 -0.92388" unit_id="300151"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_4" name_id="secret_stash_antenna_4_011" position="-725.005 5525 1622" rotation="-8.72665e-007 7.92316e-013 1 9.09963e-007" unit_id="300152"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/secret_stash/props/secret_stash_antenna_3" name_id="secret_stash_antenna_3_012" position="-575 5600 1649" rotation="-6.79783e-016 -1.64114e-015 0.92388 -0.382683" unit_id="300153"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/alaska/lumbermill/plank" name_id="plank_003" position="-375 4750 1653" rotation="0.0122168 -0.05089 0.971037 0.233125" unit_id="300154"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/pd2_dlc1/props/str_prop_alley_graffiti/str_prop_decal_graffitti_zombiedustthrow" name_id="str_prop_decal_graffitti_zombiedustthrow_001" position="875 5150 1427.22" rotation="-0.707107 2.6846e-022 -2.6846e-022 -0.707107" unit_id="300155"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/com_ext_parking_garage/com_ext_parking_garage_decal_leak_a_4m" name_id="com_ext_parking_garage_decal_leak_a_4m_001" position="1253 4750 1226" rotation="0 0 -0.707107 -0.707107" unit_id="300080"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/str_bdrop_buildings_forest/str_bdrop_buildings_forest" name_id="str_bdrop_buildings_forest_001" position="5403 1825 -449" rotation="0 0 -5.96046e-008 -1" unit_id="300156"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/str_bdrop_buildings_forest/str_bdrop_buildings_forest" name_id="str_bdrop_buildings_forest_002" position="70999.1 6402.46 -1683.55" rotation="-0.0116087 0.000200961 0.00580832 -0.999916" unit_id="300157"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/com_ext_parking_garage/com_ext_parking_garage_decal_leak_a_4m" name_id="com_ext_parking_garage_decal_leak_a_4m_002" position="1253 5150 1226" rotation="0 0 -0.707107 -0.707107" unit_id="300158"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/com_ext_parking_garage/com_ext_parking_garage_decal_leak_a_4m" name_id="com_ext_parking_garage_decal_leak_a_4m_003" position="-120 4404 1226" rotation="0 0 0.707107 -0.707107" unit_id="300159"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/payday2/architecture/com_ext_parking_garage/com_ext_parking_garage_decal_leak_a_4m" name_id="com_ext_parking_garage_decal_leak_a_4m_004" position="-126 4804 1226" rotation="0 0 0.707107 -0.707107" unit_id="300160"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/diamondheist/props/diamondheist_roof_gen_small_01" name_id="diamondheist_roof_gen_small_01_002" position="1675 4100 768.339" rotation="0 0 0.707107 -0.707107" unit_id="300161"/>
+		</table>
+		<table>
+			<unit_data continent="pc_only" name="units/world/architecture/diamondheist/props/diamondheist_roof_gen_small_01" name_id="diamondheist_roof_gen_small_01_004" position="1675 4006 768.339" rotation="0 0 0.707107 -0.707107" unit_id="300162"/>
+		</table>
+	</statics>
+	<values>
+		<workviews/>
+	</values>
+</table>

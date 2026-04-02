@@ -1,0 +1,4 @@
+{
+	"heist_Ukrainian Job +_name" : "Ukrainian Job +",
+	"heist_contact_reload_heist_cain" : "Shadow",
+	"heist_Ukrainian Job +_brief" : "JustUkrainian Job with some hidden loot"}

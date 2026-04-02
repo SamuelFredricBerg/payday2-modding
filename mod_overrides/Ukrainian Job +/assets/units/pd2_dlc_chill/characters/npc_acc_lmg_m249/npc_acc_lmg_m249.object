@@ -1,0 +1,14 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_chill/characters/npc_acc_lmg_m249/npc_acc_lmg_m249" orientation_object="rp_npc_acc_lmg_m249" />
+	<graphics>
+		<object name="g_body" enabled="true" />
+		<object name="g_bolt" enabled="true" />
+		<object name="g_bipod" enabled="true" />
+		<object name="g_sight" enabled="true" />
+		<object name="g_cover" enabled="true" />
+		<object name="g_short" enabled="true" />
+		<object name="g_fg" enabled="true" />
+		<object name="g_solid" enabled="true" />
+		<object name="g_mag" enabled="true" />
+	</graphics>
+</dynamic_object>

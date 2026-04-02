@@ -1,0 +1,10 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_chill/characters/npc_acc_muzzle_flash/muzzle_flash" orientation_object="rp_muzzle_flash" />
+
+	<effects>
+		<effect_spawner name="muzzle_flash" enabled="true" object="e_effect_01" effect="effects/particles/weapons/c45/muzzleflash" />
+	</effects>
+	<graphics>
+		<object name="g_box_01" enabled="false" />
+	</graphics>
+</dynamic_object>

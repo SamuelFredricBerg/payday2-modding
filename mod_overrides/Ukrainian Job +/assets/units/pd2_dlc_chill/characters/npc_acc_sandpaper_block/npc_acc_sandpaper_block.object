@@ -1,0 +1,11 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_chill/characters/npc_acc_sandpaper_block/npc_acc_sandpaper_block" orientation_object="rp_npc_acc_sandpaper_block" />
+	<bodies>
+		<body name="body_static" enabled="true" template="editor">
+			<object name="rp_npc_acc_sandpaper_block" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_sandpaper_block_lod0" enabled="true" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,13 @@
+<unit type="chl" slot="1">
+	<object file="units/pd2_dlc_chill/characters/npc_acc_muzzle_flash/muzzle_flash" />
+	<dependencies>
+		<depends_on effect="effects/particles/weapons/c45/muzzleflash" />
+	</dependencies>
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" >
+            <var name="only_visible_in_editor" value="true" />
+        </extension>
+        <extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

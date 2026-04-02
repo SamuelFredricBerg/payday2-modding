@@ -1,0 +1,6 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_help/characters/npc_acc_spooky_bag/npc_acc_spooky_bag" orientation_object="rp_bag" />
+	<graphics>
+		<object name="g_bag" enabled="true" />
+	</graphics>
+</dynamic_object>

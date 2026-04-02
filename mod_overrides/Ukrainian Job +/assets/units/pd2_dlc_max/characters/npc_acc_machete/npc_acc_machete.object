@@ -1,0 +1,6 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_max/characters/npc_acc_machete/npc_acc_machete" orientation_object="rp_wpn_fps_mel_agave" />
+	<graphics>
+		<object name="g_agave" enabled="true" />
+	</graphics>
+</dynamic_object>

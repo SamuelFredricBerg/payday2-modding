@@ -1,0 +1,6 @@
+<unit type="chl" slot="1" >
+    <object file="units/pd2_dlc_chill/characters/npc_acc_hockey_gear_stick/npc_acc_hockey_gear_stick" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+    </extensions>
+</unit>

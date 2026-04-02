@@ -1,0 +1,5 @@
+<materials version="3">
+    <material name="syringe" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/payday2/characters/npc_acc_syringe/syringe_df"/>
+    </material>
+</materials>

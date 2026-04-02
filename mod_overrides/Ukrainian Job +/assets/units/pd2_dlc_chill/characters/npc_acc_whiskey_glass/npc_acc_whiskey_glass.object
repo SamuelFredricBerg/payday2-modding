@@ -1,0 +1,17 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_chill/characters/npc_acc_whiskey_glass/npc_acc_whiskey_glass" orientation_object="rp_npc_acc_whiskey_glass" />
+	<bodies>
+		<body name="body_editor" enabled="true" template="editor">
+			<object name="rp_npc_acc_whiskey_glass" />
+			<object name="c_box_editor" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<graphic_group name="g_whiskey_group" enabled="true">
+			<lod_object name="g_whiskey_glass">
+				<object name="g_whiskey_glass_lod0" enabled="true"  max_distance="1000" />
+				<object name="g_whiskey_glass_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

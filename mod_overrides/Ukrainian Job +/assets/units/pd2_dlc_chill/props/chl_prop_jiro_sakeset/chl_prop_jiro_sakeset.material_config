@@ -1,0 +1,12 @@
+<materials version="3">
+    <material name="mat_sakeset" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_chill/props/chl_prop_jiro_sakeset/chl_prop_jiro_sakeset_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_chill/props/chl_prop_jiro_sakeset/chl_prop_jiro_sakeset_nm" mip="4"/>
+        <reflection_texture file="units/payday2/cubemaps/cubemap_steel" type="cubemap"/>
+    </material>
+    <material name="mat_sakeset_lod" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture mip="4" file="units/pd2_dlc_chill/props/chl_prop_jiro_sakeset/chl_prop_jiro_sakeset_df"/>
+        <bump_normal_texture mip="4" file="units/pd2_dlc_chill/props/chl_prop_jiro_sakeset/chl_prop_jiro_sakeset_nm"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

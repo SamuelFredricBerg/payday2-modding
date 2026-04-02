@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel orientation_object="rp_npc_acc_gambling_chips_stack" materials="units/pd2_dlc_casino/dev/cas_dev_gambling_chips/cas_dev_gambling_chips" />
+	<bodies>
+		<body name="body_static" enabled="true" template="editor">
+			<object name="rp_npc_acc_gambling_chips_stack" />
+			<object name="c_box_editor" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

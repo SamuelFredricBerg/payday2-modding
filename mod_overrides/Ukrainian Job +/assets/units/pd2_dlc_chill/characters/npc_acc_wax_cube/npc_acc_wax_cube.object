@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_chill/characters/npc_acc_wax_cube/npc_acc_wax_cube" orientation_object="rp_npc_acc_wax_cube" />
+	<bodies>
+		<body name="body_static" enabled="true" template="editor">
+			<object name="rp_npc_acc_wax_cube" />
+			<object name="c_box_editor" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<lod_object name="lod_g_wax_cube">
+			<object name="g_wax_cube_lod0" enabled="true" max_distance="1500" />
+			<object name="g_wax_cube_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

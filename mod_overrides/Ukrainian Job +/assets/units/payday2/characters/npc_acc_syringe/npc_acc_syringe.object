@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/payday2/characters/npc_acc_syringe/npc_acc_syringe" orientation_object="rp_syringe" />
+
+  <graphics>
+		<object name="g_syringe" enabled="true" />
+  </graphics>
+  
+</dynamic_object>

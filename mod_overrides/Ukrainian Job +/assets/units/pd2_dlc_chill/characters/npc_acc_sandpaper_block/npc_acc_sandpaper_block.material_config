@@ -1,0 +1,6 @@
+<materials version="3">
+	<material name="mtr_sandpaper_block" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_chill/characters/npc_acc_sandpaper_block/sandpaper_block_df" mip="4"/>
+		<bump_normal_texture file="units/pd2_dlc_chill/characters/npc_acc_sandpaper_block/sandpaper_block_nm" mip="4" />
+	</material>
+</materials>

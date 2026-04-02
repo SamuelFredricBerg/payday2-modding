@@ -1,0 +1,5 @@
+<materials version="3">
+    <material name="mat_puck" version="2" render_template="generic:DIFFUSE_TEXTURE">
+        <diffuse_texture file="units/payday2/props/lxa_prop_hockey_gear/lxa_prop_hockey_gear_puck_df"/>
+    </material>
+</materials>

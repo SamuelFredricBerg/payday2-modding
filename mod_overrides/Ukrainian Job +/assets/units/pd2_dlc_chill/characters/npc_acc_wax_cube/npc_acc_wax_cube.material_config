@@ -1,0 +1,6 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:SIMPLE_TINT" name="mat_wax_cube" version="2">
+        <diffuse_texture file="units/pd2_dlc_chill/characters/npc_acc_wax_cube/npc_acc_wax_cube_df"/>
+        <variable type="vector3" name="tint_color" value="0.89763778448105 0.84835577011108 0.32737377285957"/>
+    </material>
+</materials>

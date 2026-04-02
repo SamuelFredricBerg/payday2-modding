@@ -1,0 +1,11 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_chill/characters/npc_acc_weapon_wick/npc_acc_weapon_wick" orientation_object="rp_npc_acc_weapon_wick" />
+	<graphics>
+		<object name="g_mag" enabled="true" />
+		<object name="g_barrel" enabled="true" />
+		<object name="g_slide" enabled="true" />
+		<object name="g_body" enabled="true" />
+		<object name="g_sights" enabled="true" />
+		<object name="g_compensator" enabled="true" />
+	</graphics>
+</dynamic_object>
