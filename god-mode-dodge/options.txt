@@ -1,0 +1,17 @@
+{
+	"menu_id" : "god_mode_options",
+	"parent_menu_id" : "blt_options",
+	"title" : "god_mode_title",
+	"back_callback" : "GodMode_Close",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "gm_enabled",
+			"title" : "gm_enabled_title",
+			"description" : "gm_enabled_desc",
+			"callback" : "GodMode_enabledToggle",
+			"value" : "enabled",
+			"default_value" : true
+		}
+	]
+}
