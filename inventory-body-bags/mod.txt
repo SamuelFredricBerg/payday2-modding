@@ -1,12 +1,13 @@
 {
-    "name": "inventory-body-bags",
-    "description": "",
-    "author": "",
-    
-    "hooks": [
-        {
-            "hook_id": "lib/tweak_data/playertweakdata",
-            "script_path": "code.lua"
-        }
-    ]
+	"name" : "inventory-body-bags",
+	"description" : "",
+	"author" : "",
+	"blt_version" : 2,
+
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/tweak_data/playertweakdata",
+			"script_path" : "code.lua"
+		}
+	]
 }
