@@ -1,0 +1,1 @@
+{"MIH_Correction_X_Value":-21.559777990981,"MIH_Correction_Y_Value":92.487464356734,"MIH_Enable_Cash_Value":true}

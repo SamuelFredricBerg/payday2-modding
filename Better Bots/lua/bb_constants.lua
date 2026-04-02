@@ -1,0 +1,235 @@
+local BB = _G.BB
+
+local FEATURE_FLAGS = {
+    DAMAGE_MULTIPLIER = false,
+}
+
+local CONSTANTS = {
+    GRACE_PERIOD = 10,
+    INTIMIDATE_DISTANCE = 1200,
+    INTIMIDATE_ANGLE = 90,
+    INTIMIDATE_COOLDOWN = 2,
+    INTIMIDATE_MAX_ATTEMPTS = 3,
+
+    MARK_DISTANCE = 3000,
+    MARK_COOLDOWN = 2,
+
+    MELEE_DISTANCE = 200,
+    MELEE_ANGLE = 60,
+    MELEE_CHECK_INTERVAL = 0.1,
+
+    CONC_DISTANCE = 3000,
+    CONC_ANGLE = 90,
+    CONC_COOLDOWN = 4,
+    CONC_AREA_RADIUS = 1000,
+    CONC_PLAYER_SAFE_RADIUS = 1000,
+    CONC_SHIELD_BONUS = 2.0,
+    CONC_SPECIAL_BONUS = 1.5,
+    CONC_MIN_ENEMIES = 5,
+    CONC_MIN_SHIELDS = 2,
+    CONC_SPECIAL_THRESHOLD = 2,
+    CONC_SPECIAL_MIN_ENEMIES = 3,
+
+    CLUSTER_DISTANCE = 1000,
+    DBSCAN_MIN_POINTS = 2,
+
+    RELOAD_CHECK_INTERVAL = 0.5,
+    RELOAD_NO_THREATS = 0.9,
+    RELOAD_NO_ACTIVE = 0.6,
+    RELOAD_FAR = 0.4,
+    RELOAD_MID = 0.25,
+    RELOAD_CLOSE = 0.1,
+    RELOAD_BASE = 0.05,
+    RELOAD_ACTIVE_CLOSE_DIST = 500,
+    RELOAD_THREAT_CLOSE_DIST = 300,
+    RELOAD_HIGH_PRESSURE = 0.85,
+    RELOAD_DANGEROUS_SPECIAL_DIST = 1200,
+    RELOAD_FIRING_AT_ME_DIST = 800,
+    RELOAD_NOT_IN_COVER_DIST = 1000,
+    RELOAD_LOW_CAP_THRESHOLD = 10,
+    RELOAD_LOW_CAP_MUL = 0.3,
+    RELOAD_LOW_CAP_TACTICAL_MAX = 0.5,
+
+    TASING_THREAT_MUL = 3.0,
+    SPOOC_THREAT_MUL = 3.5,
+    SPOOC_CLOSE_RANGE = 1500,
+    SPOOC_CLOSE_MUL = 1.5,
+    TARGET_STICKINESS_MUL = 1.3,
+
+    DIST_FAR_THRESHOLD = 4000,
+    DIST_FAR_MUL = 0.7,
+    DIST_MID_THRESHOLD = 3000,
+    DIST_MID_MUL = 0.85,
+    DIST_CLOSE_THRESHOLD = 500,
+    DIST_CLOSE_MUL = 1.5,
+    SNIPER_FAR_MUL = 1.1,
+
+    LOW_HEALTH_RATIO = 0.3,
+    DOZER_LOW_HEALTH_MUL = 1.3,
+
+    DOZER_PENALTY_BASE = 0.85,
+
+    DIST_NORM_DIVISOR = 1000,
+    ANGLE_FACTOR_BASE = 0.5,
+    ANGLE_FACTOR_SCALE = 0.5,
+
+    ACC_MUL_DEFAULT = 1.25,
+    ACC_MUL_SNIPER = 1.75,
+    ACC_MUL_ASSAULT_RIFLE = 1.2,
+    ACC_MUL_LMG = 1.1,
+
+    RELOAD_SPEED_MUL = 2,
+
+    TASING_PRESSURE_BONUS = 0.25,
+    MY_HEALTH_CRITICAL = 0.25,
+    MY_HEALTH_CRITICAL_PRESSURE = 0.2,
+    MY_HEALTH_LOW = 0.5,
+    MY_HEALTH_LOW_PRESSURE = 0.1,
+    PRESSURE_CLOSE_ENEMY_DIST = 800,
+
+    TARGET_SWITCH_DELAY = 0.5,
+    TARGET_LOCK_MIN = 0.5,
+
+    COOP_TEAMMATE_DANGER_RANGE = 1000,
+    MAX_RELOADING_TEAMMATES = 2,
+    PRIORITY_TARGET_DURATION = 7,
+    PRIORITY_TARGET_CLAIM_TIMEOUT = 5,
+    DOZER_FOCUS_REFRESH = 1,
+    COOP_REFRESH_INTERVAL = 0.1,
+    ASSIGNMENT_UPDATE_INTERVAL = 0.3,
+    ASSIGNED_TARGET_BONUS = 600,
+    UNASSIGNED_TARGET_BONUS = 100,
+    OTHER_ASSIGNMENT_PENALTY = 0.3,
+
+    PRESSURE_SCAN_RANGE = 2000,
+    PRESSURE_TEAMMATE_LOW_HEALTH_WEIGHT = 0.3,
+    PRESSURE_SPECIAL_WEIGHT = 0.15,
+    PRESSURE_DOWNED_WEIGHT = 0.5,
+    PRESSURE_RELOADING_TEAMMATE_WEIGHT = 0.15,
+    PRESSURE_RECENT_DAMAGE_WEIGHT = 0.2,
+    RECENT_DAMAGE_DURATION = 2.0,
+    PRESSURE_ENEMY_WEIGHT = 0.05,
+    PRESSURE_HIGH_THRESHOLD = 0.7,
+    PRESSURE_LOW_THRESHOLD = 0.3,
+    PRESSURE_RELOAD_MIN = 0.0,
+    PRESSURE_RELOAD_MAX = 0.8,
+
+    LOW_HEALTH_TTK_BONUS = 1.5,
+    TTK_SCORE_CAP = 10,
+
+    SNIPER_SPECIAL_BONUS = 15,
+    SHOTGUN_MAX_BONUS = 20,
+    SHOTGUN_RANGE_DIVISOR = 50,
+    SHOTGUN_EFFECTIVE_RANGE = 1000,
+    SHOTGUN_SPECIAL_BONUS = 15,
+    DEFAULT_ARCHETYPE_MUL = 2,
+
+    CONC_EVAL_INTERVAL = 1,
+    CACHE_CLEANUP_INTERVAL = 10,
+    BAG_SPEED_MUL = 1.5,
+    NEAR_TEAMMATE_STATE_BONUS = 10,
+    MARK_VERIFIED_BONUS = 150,
+    MARK_SHIELD_BONUS = 200,
+}
+
+local ARCHETYPE_DAMAGE_MULTIPLIERS = {
+    assault_rifle = 1.5,
+    lmg = 1.25,
+    sniper = 3,
+    shotgun = 2.5,
+}
+
+local THREAT_WEIGHTS = {
+    DISTANCE_BASE = 1000,
+    CLOAKER = 100,
+    TASER = 90,
+    SHIELD = 60,
+    DOZER = 80,
+    MEDIC = 70,
+    SNIPER = 75,
+    SPECIAL = 65,
+    TURRET = 20,
+    LOW_HEALTH_BONUS = 50,
+    TARGETING_ME_BONUS = 60,
+    SAME_TARGET_PENALTY = 0.35,
+    DIRECTION_BONUS = 30,
+    CAPTAIN_MINION = 110,
+    CAPTAIN_VIP_SUPPRESSED = 5,
+    DOZER_MEDIC_SYNERGY = 25,
+    SHIELD_BLOCKED_PENALTY = 0.2,
+    TASING_BONUS = 120,
+    SPOOC_ATTACK_BONUS = 140,
+    COOP_TURRET_PRIO = 8,
+    COOP_DOZER_PRIO = 13,
+    COOP_DOZER_FACING_BONUS = 20,
+    COOP_TASER_PRIO = 14,
+    COOP_CLOAKER_PRIO = 12,
+    COOP_CLOAKER_CLOSE_PRIO = 18,
+    COOP_SNIPER_PRIO = 15,
+    COOP_SNIPER_FAR_BONUS = 20,
+    COOP_MEDIC_PRIO = 20,
+    COOP_TASING_PRIO = 30,
+    COOP_SPOOC_PRIO = 28,
+    COOP_SHIELD_BLOCKED_PRIO = 2,
+    COOP_SHIELD_CLEAR_PRIO = 9,
+    COOP_CLUSTER_BONUS = 5,
+    COOP_VERIFIED_BONUS = 2,
+}
+
+local SLOTS = {
+    PLAYERS = { 2, 3, 4, 5 },
+    CRIMINALS_NO_DEPLOYABLES = { 2, 3, 16 },
+    HOSTAGES = 22,
+    TURRETS = 25,
+}
+
+local ENEMY_TWEAK_MAP = {
+    shield = { shield = true },
+    fbi_shield = { shield = true },
+    heavy_swat_shield = { shield = true },
+    tank = { dozer = true },
+    tank_medic = { dozer = true, medic = true },
+    tank_hw = { dozer = true },
+    tank_mini = { dozer = true },
+    taser = { taser = true },
+    spooc = { cloaker = true },
+    medic = { medic = true },
+    sniper = { sniper = true },
+    phalanx_vip = { captain = true },
+    phalanx_minion = { captain = true },
+    phalanx_vip_test = { captain = true },
+    swat_turret_gun = { turret = true },
+}
+
+local INFER_FLAGS_PATTERNS = {
+    turret = "turret",
+    shield = "shield",
+    tank = "dozer",
+    dozer = "dozer",
+    taser = "taser",
+    spooc = "cloaker",
+    cloaker = "cloaker",
+    medic = "medic",
+    sniper = "sniper",
+    phalanx = "captain",
+    captain = "captain",
+}
+
+local CLASSIFY_TAG_MAP = {
+    shield = "shield",
+    tank = "dozer",
+    taser = "taser",
+    spooc = "cloaker",
+    sniper = "sniper",
+    medic = "medic",
+    phalanx = "captain",
+}
+
+BB.FEATURE_FLAGS = FEATURE_FLAGS
+BB.CONSTANTS = CONSTANTS
+BB.THREAT_WEIGHTS = THREAT_WEIGHTS
+BB.SLOTS = SLOTS
+BB.ENEMY_TWEAK_MAP = ENEMY_TWEAK_MAP
+BB.ARCHETYPE_DAMAGE_MULTIPLIERS = ARCHETYPE_DAMAGE_MULTIPLIERS
+BB.INFER_FLAGS_PATTERNS = INFER_FLAGS_PATTERNS
+BB.CLASSIFY_TAG_MAP = CLASSIFY_TAG_MAP
