@@ -1,0 +1,10 @@
+{
+	"ibb_options_menu_title" : "Inventory Body Bags",
+	"ibb_options_menu_desc" : "Configure starting and maximum body bag amounts.",
+
+	"ibb_start_amount_title" : "Starting Amount",
+	"ibb_start_amount_desc" : "Number of body bags at the start of each heist (0-99).",
+
+	"ibb_max_amount_title" : "Maximum Amount",
+	"ibb_max_amount_desc" : "Maximum number of body bags you can hold (0-99)."
+}

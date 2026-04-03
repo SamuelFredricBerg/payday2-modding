@@ -1,0 +1,33 @@
+{
+	"menu_id" : "ibb_options_menu",
+	"parent_menu_id" : "blt_options",
+	"title" : "ibb_options_menu_title",
+	"description" : "ibb_options_menu_desc",
+	"back_callback" : "IBB_SaveSettings",
+	"items" : [
+		{
+			"type" : "slider",
+			"id" : "ibb_start_amount",
+			"title" : "ibb_start_amount_title",
+			"description" : "ibb_start_amount_desc",
+			"callback" : "IBB_SetStartAmount",
+			"value" : "start_amount",
+			"default_value" : 10,
+			"min" : 0,
+			"max" : 99,
+			"step" : 1
+		},
+		{
+			"type" : "slider",
+			"id" : "ibb_max_amount",
+			"title" : "ibb_max_amount_title",
+			"description" : "ibb_max_amount_desc",
+			"callback" : "IBB_SetMaxAmount",
+			"value" : "max_amount",
+			"default_value" : 99,
+			"min" : 0,
+			"max" : 99,
+			"step" : 1
+		}
+	]
+}
