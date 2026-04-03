@@ -5,7 +5,10 @@ function IntimitateInteractionExt:can_select(player)
 	if self.tweak_data == "corpse_dispose" then
 		return not managers.player:chk_body_bags_depleted()
 	end
-	return old_ibb_iie_can_select(self, player)
+	if old_ibb_iie_can_select then
+		return old_ibb_iie_can_select(self, player)
+	end
+	return true
 end
 
 function IntimitateInteractionExt:_interact_blocked(player)
