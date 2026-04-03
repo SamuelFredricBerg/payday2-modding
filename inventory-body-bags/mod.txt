@@ -8,6 +8,10 @@
 		{ 	
 			"hook_id" : "lib/tweak_data/playertweakdata",
 			"script_path" : "code.lua"
+		},
+		{
+			"hook_id" : "lib/managers/playermanager",
+			"script_path" : "playermanager.lua"
 		}
 	]
 }
