@@ -1,8 +1,14 @@
+_G.MorePagers = _G.MorePagers or { enabled = true }
+
 local old_init = PlayerTweakData.init
 
 function PlayerTweakData:init()
 	old_init(self)
-	
+
+	if not MorePagers.enabled then
+		return
+	end
+
 	self.alarm_pager = {
 		first_call_delay = {2, 4},
 		call_duration = {

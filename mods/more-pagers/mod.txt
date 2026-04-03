@@ -2,8 +2,20 @@
 	"name" : "Realistic Pagers",
 	"author" : "WolfeNberg",
 	"description" : "Makes the control guy sometimes believe you and sometimes not",
-	"version" : "1.1"
+	"version" : "1.1",
+	"blt_version" : 2,
 	"hooks" : [
 		{ "hook_id" : "lib/tweak_data/playertweakdata", "script_path" : "pager.lua"}
-		]
+	],
+	"keybinds" : [
+		{
+			"keybind_id" : "more_pagers_toggle",
+			"name" : "More Pagers Toggle",
+			"description" : "Enable or disable the More Pagers mod",
+			"script_path" : "toggle.lua",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"localized" : false
+		}
+	]
 }

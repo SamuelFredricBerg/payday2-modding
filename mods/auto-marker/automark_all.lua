@@ -2,6 +2,8 @@ if not AutoMarker then
     AutoMarker = {}
 end
 
+AutoMarker.enabled = AutoMarker.enabled ~= false
+
 
 function isGameOnlineOrHost()
     if game_state_machine and game_state_machine:current_state_name() then
@@ -34,6 +36,10 @@ end
 
 Hooks:PostHook(GroupAIStateBase, "update", "AutoMarker_Update", function(self)
     
+    if not AutoMarker.enabled then
+        return
+    end
+
     if not is_in_game() or not managers.network:session() or not managers.network:session():are_peers_done_streaming() then
         return
     end

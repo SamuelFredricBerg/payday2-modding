@@ -14,5 +14,16 @@
             "hook_id": "lib/setups/gamesetup",
             "script_path": "automark_all.lua"  
         }
+    ],
+    "keybinds": [
+        {
+            "keybind_id": "auto_marker_toggle",
+            "name": "Auto Marker Toggle",
+            "description": "Enable or disable the Auto Marker mod",
+            "script_path": "toggle.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        }
     ]
 }
