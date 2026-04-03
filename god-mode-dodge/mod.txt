@@ -9,5 +9,17 @@
 			"hook_id" : "lib/units/beings/player/playerdamage",
 			"script_path" : "code.lua"
 		}
+	],
+
+	"keybinds" : [
+		{
+			"keybind_id" : "god_mode_toggle_keybind",
+			"name" : "God Mode Toggle",
+			"description" : "Toggle god mode on or off",
+			"script_path" : "keybind.lua",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"localized" : false
+		}
 	]
 }
