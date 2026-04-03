@@ -6,7 +6,7 @@
 
 	"hooks" : [
 		{ 	
-			"hook_id" : "lib/tweak_data/playertweakdata",
+			"hook_id" : "lib/units/beings/player/playerdamage",
 			"script_path" : "code.lua"
 		}
 	]
