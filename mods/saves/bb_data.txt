@@ -1,1 +1,0 @@
-{"dodge":5,"combat":true,"keepstaying":true,"move":3,"health":3,"doc":false,"conc":true,"coop":true}
