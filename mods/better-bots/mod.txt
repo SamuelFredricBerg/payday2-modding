@@ -1,13 +1,8 @@
 {
-	"name" : "Better Bots",
-	"description" : "Tweaks and improves the AI teammates",
-	"author" : "See readme",
-	"contact" : "steamcommunity.com/groups/schmudmods",
-	"version" : "52.0.3",
+	"name" : "better-bots",
+	"description" : "",
+	"author" : "",
 	"blt_version" : 2,
-	"color" : "0.2 0.4 0.2",
-	"image" : "bb.png",
-	"updates" : [ { "identifier" : "BB" } ],
 	"hooks" : [
 		{ "hook_id" : "lib/managers/menumanager", "script_path" : "betterbots.lua" },
 		{ "hook_id" : "lib/managers/criminalsmanager", "script_path" : "betterbots.lua" },

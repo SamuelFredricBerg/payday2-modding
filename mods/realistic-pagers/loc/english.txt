@@ -1,0 +1,6 @@
+{
+	"mp_options_title" : "More Pagers",
+	"mp_options_desc" : "Configure More Pagers settings.",
+	"mp_enabled_title" : "Enabled",
+	"mp_enabled_desc" : "Enable or disable the More Pagers mod."
+}

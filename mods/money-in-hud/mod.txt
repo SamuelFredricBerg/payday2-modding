@@ -1,15 +1,8 @@
 {
     "name" : "MIH",
-    "description" : "Adds a new panel into your HUD that display the money earned through the heist.",
-    "author" : "Nepsy",
-    "contact" : "id/Nepgearsy",
-    "version" : "1.7",
+    "description" : "",
+    "author" : "",
     "blt_version" : 2,
-    "image" : "mih.png",
-    "color" : "1 0.8 0",
-    "updates" : [
-    { "identifier" : "MIH" }
-    ],
     "hooks":[
         {
             "hook_id":"lib/managers/hud/hudassaultcorner",

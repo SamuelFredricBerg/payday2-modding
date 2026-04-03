@@ -1,9 +1,0 @@
-{
-	"name" : "Realistic Pagers",
-	"author" : "WolfeNberg",
-	"description" : "Makes the control guy sometimes believe you and sometimes not",
-	"version" : "1.1"
-	"hooks" : [
-		{ "hook_id" : "lib/tweak_data/playertweakdata", "script_path" : "pager.lua"}
-		]
-}

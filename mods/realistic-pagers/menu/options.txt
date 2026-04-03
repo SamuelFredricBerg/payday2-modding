@@ -1,0 +1,18 @@
+
+{
+	"menu_id" : "more_pagers_options_menu",
+	"parent_menu_id" : "blt_options",
+	"title" : "mp_options_title",
+	"description" : "mp_options_desc",
+	"back_callback" : "MorePagers_SaveSettings",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "mp_enabled",
+			"title" : "mp_enabled_title",
+			"description" : "mp_enabled_desc",
+			"value" : "enabled",
+			"default_value" : true
+		}
+	]
+}

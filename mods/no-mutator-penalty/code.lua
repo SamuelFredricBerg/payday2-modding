@@ -387,7 +387,6 @@ end
 function BaseMutator:get_data_from_attribute_string(string_table)
 	if #string_table > 0 and #string_table % 2 ~= 0 then
 		Application:error("Warning! Mismatched attribute string table, should have an even amount of elements!", self:id())
-		print(inspect(string_table))
 
 		return nil
 	end
