@@ -1,3 +1,5 @@
+_G.CarryInfo = _G.CarryInfo or { enabled = true }
+
 function HUDTemp:carry_weight_string( carry_id )
 
 	if carry_id == "coke_light" then
@@ -33,7 +35,9 @@ function HUDTemp:carry_properties( carry_id , type )
 end
 
 Hooks:PostHook( HUDTemp , "show_carry_bag" , "DetailedBagsPostShowCarryBag" , function( self , carry_id , value )
-	
+
+	if not CarryInfo.enabled then return end
+
 	local bag_panel = self._temp_panel:child("bag_panel")
 	
 	local carry_data = tweak_data.carry[carry_id]
