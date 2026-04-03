@@ -1,4 +1,4 @@
-_G.GodMode = _G.GodMode or { enabled = true }
+_G.GodMode = _G.GodMode or { enabled = false }
 
 if RequiredScript == "lib/units/beings/player/playerdamage" then
 	local old_godmodenohit_init = PlayerDamage.init
