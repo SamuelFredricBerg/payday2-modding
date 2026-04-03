@@ -1,8 +1,7 @@
-if not AutoMarker then 
-    AutoMarker = {}
+_G.AutoMarker = _G.AutoMarker or {}
+if not AutoMarker.Settings then
+    AutoMarker.Settings = { enabled = true }
 end
-
-AutoMarker.enabled = AutoMarker.enabled ~= false
 
 
 function isGameOnlineOrHost()
@@ -36,7 +35,7 @@ end
 
 Hooks:PostHook(GroupAIStateBase, "update", "AutoMarker_Update", function(self)
     
-    if not AutoMarker.enabled then
+    if not AutoMarker.Settings.enabled then
         return
     end
 

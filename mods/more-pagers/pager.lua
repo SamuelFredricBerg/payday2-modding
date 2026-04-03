@@ -1,11 +1,14 @@
-_G.MorePagers = _G.MorePagers or { enabled = true }
+_G.MorePagers = _G.MorePagers or {}
+if not MorePagers.Settings then
+	MorePagers.Settings = { enabled = true }
+end
 
 local old_init = PlayerTweakData.init
 
 function PlayerTweakData:init()
 	old_init(self)
 
-	if not MorePagers.enabled then
+	if not MorePagers.Settings.enabled then
 		return
 	end
 

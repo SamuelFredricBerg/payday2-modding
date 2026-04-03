@@ -1,0 +1,6 @@
+{
+	"am_options_title" : "Auto Marker",
+	"am_options_desc" : "Configure Auto Marker settings.",
+	"am_enabled_title" : "Enabled",
+	"am_enabled_desc" : "Enable or disable the Auto Marker mod."
+}

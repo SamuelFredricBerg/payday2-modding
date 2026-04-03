@@ -1,4 +1,14 @@
+_G.ThreeConcealment = _G.ThreeConcealment or {}
+if not ThreeConcealment.Settings then
+	ThreeConcealment.Settings = { enabled = true }
+end
+
+local _orig_get_concealment = BlackMarketManager._get_concealment
+
 function BlackMarketManager:_get_concealment(primary, secondary, armor, melee_weapon, modifier)
+	if not ThreeConcealment.Settings.enabled then
+		return _orig_get_concealment(self, primary, secondary, armor, melee_weapon, modifier)
+	end
 	local stats_tweak_data = tweak_data.weapon.stats
 	local primary_visibility = 0
 	local secondary_visibility = 0

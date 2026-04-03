@@ -1,0 +1,17 @@
+{
+	"menu_id" : "three_concealment_options_menu",
+	"parent_menu_id" : "blt_options",
+	"title" : "tc_options_title",
+	"description" : "tc_options_desc",
+	"back_callback" : "ThreeConcealment_SaveSettings",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "tc_enabled",
+			"title" : "tc_enabled_title",
+			"description" : "tc_enabled_desc",
+			"value" : "enabled",
+			"default_value" : true
+		}
+	]
+}

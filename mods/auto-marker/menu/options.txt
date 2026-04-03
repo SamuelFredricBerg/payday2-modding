@@ -1,0 +1,17 @@
+{
+	"menu_id" : "auto_marker_options_menu",
+	"parent_menu_id" : "blt_options",
+	"title" : "am_options_title",
+	"description" : "am_options_desc",
+	"back_callback" : "AutoMarker_SaveSettings",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "am_enabled",
+			"title" : "am_enabled_title",
+			"description" : "am_enabled_desc",
+			"value" : "enabled",
+			"default_value" : true
+		}
+	]
+}

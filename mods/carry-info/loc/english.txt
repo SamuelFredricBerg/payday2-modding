@@ -1,0 +1,6 @@
+{
+	"ci_options_title" : "Carry Info",
+	"ci_options_desc" : "Configure Carry Info settings.",
+	"ci_enabled_title" : "Enabled",
+	"ci_enabled_desc" : "Enable or disable the Carry Info mod."
+}

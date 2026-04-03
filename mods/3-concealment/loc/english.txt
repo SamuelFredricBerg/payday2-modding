@@ -1,0 +1,6 @@
+{
+	"tc_options_title" : "3 Concealment",
+	"tc_options_desc" : "Configure 3 Concealment settings.",
+	"tc_enabled_title" : "Enabled",
+	"tc_enabled_desc" : "Enable or disable the 3 Concealment mod."
+}
