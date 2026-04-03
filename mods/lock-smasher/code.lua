@@ -11,7 +11,7 @@ function PlayerStandard:_calc_melee_locksmasher_ray(t)
 	local to = from + self._unit:movement():m_head_rot():y() * range
 	if not LockSmasher.Settings.Enabled then return end
 	if LockSmasher.Settings.Mode == 1 and not LockSmasher.Settings.PowerToolsEntries[melee_entry] then return end
-	if LockSmasher.Settings.Mode == 2 and not melee_entry == "cs" then return end
+	if LockSmasher.Settings.Mode == 2 and melee_entry ~= "cs" then return end
 	
 	return self._unit:raycast("ray", from, to, "slot_mask", InstantBulletBase:bullet_slotmask(), "ignore_unit", {}, "ray_type", "body bullet lock")
 end
@@ -23,7 +23,7 @@ function PlayerStandard:_do_action_melee(t, ...)
 		local hit_unit = raytrace.unit
 		if hit_unit:damage() and raytrace.body:extension() and raytrace.body:extension().damage then
 			--do the thing
-			raytrace.body:extension().damage:damage_lock(user_unit, raytrace.normal, raytrace.position, raytrace.direction, damage)
+			raytrace.body:extension().damage:damage_lock(self._unit, raytrace.normal, raytrace.position, raytrace.direction, damage)
 			--sync to peers
 			if hit_unit:id() ~= -1 then
 				managers.network:session():send_to_peers_synched("sync_body_damage_lock", raytrace.body, damage)
@@ -32,7 +32,7 @@ function PlayerStandard:_do_action_melee(t, ...)
 				--spawn the fancy sawing particles
 				local effect = World:effect_manager():spawn({
 				effect = Idstring("effects/payday2/particles/weapons/saw/sawing"),
-				position = raytrace.hit_position,
+				position = raytrace.position,
 				normal = math.UP})
 				--make the fancy sawing particles sod off
 				DelayedCalls:Add("LockSmasher.ParticleKill", 0.1, function() World:effect_manager():fade_kill(effect) end)
