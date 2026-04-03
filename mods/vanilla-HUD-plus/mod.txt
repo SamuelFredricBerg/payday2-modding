@@ -1,5 +1,5 @@
 {
-	"name" : "VanillaHUDPlus",
+	"name" : "vanilla-HUD-plus",
 	"description" : "This is a Mod Collection of HUD altering scripts, as well as quality of life changes to the game and its menus",
 	"author" : "Test1, LT71 (Bunnie( 2)), Kamikaze94, BangL",
 	"version" : "3.4.8",

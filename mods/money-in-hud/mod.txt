@@ -1,5 +1,5 @@
 {
-    "name" : "MIH",
+    "name" : "money-in-hud",
     "description" : "",
     "author" : "",
     "blt_version" : 2,

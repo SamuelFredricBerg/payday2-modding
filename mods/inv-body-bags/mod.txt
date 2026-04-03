@@ -1,5 +1,5 @@
 {
-    "name" : "inventory-body-bags",
+    "name" : "inv-body-bags",
 	"description" : "",
 	"author" : "",
 	"blt_version" : 2,
