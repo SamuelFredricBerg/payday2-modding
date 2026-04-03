@@ -22,7 +22,7 @@ Hooks:PreHook(PlayerStandard, 'init', 'RemovableMask_PlayerStandard_init', funct
 	Hooks:RemovePreHook('RemovableMask_PlayerStandard_init')
 end)
 
-local pull_off_mask_time = tweak_data.player.put_on_mask_time * 2
+local pull_off_mask_time = tweak_data.player.put_on_mask_time / 2
 
 local mask_removal_enabled
 

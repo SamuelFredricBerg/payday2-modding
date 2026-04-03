@@ -1,0 +1,21 @@
+Gage Package Contour Mod
+Created by Corphix
+ - https://modworkshop.net/user/7059
+ - https://steamcommunity.com/id/Corphix
+
+Description: Outlines the Gage Packages scattered throughout the map.
+
+Install instructions:
+Unzip, drag and drop into the "...PAYDAY 2/assets/mod_overrides/" folder.
+
+This mod is provided "as is" and the creator takes no responsibility for it's use.
+You may feel free to change the mod, provided original credit is given.
+This mod was created for Mod Workshop https://modworkshop.net/ and is free.
+
+Version history:
+==1.1==
+ - Fixed outlines disappearing, thank you to Binnorie (https://modworkshop.net/user/17587) for the tip 
+==1.0==
+ - Release
+
+Mod requests can be left on my steam page http://steamcommunity.com/id/Corphix
