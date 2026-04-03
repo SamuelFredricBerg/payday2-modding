@@ -97,11 +97,6 @@ function PlayerStandard:_update_use_item_timers(t, input)
 	end
 end
 
-local orig_PlayerStandard__does_deploying_limit_movement = PlayerStandard._does_deploying_limit_movement
-function PlayerStandard:_does_deploying_limit_movement()
-	return self._use_item_maskoff or orig_PlayerStandard__does_deploying_limit_movement(self)
-end
-
 local orig_PlayerStandard__start_action_use_item = PlayerStandard._start_action_use_item
 function PlayerStandard:_start_action_use_item(t)
 	if self._use_item_maskoff then
