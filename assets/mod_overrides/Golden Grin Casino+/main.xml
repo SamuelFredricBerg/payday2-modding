@@ -1,0 +1,118 @@
+<table min_lib_ver="4.5" name="Golden Grin Casino +">
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<level ai_group_type="America" briefing_dialog="Play_pln_ca1_brf_01" cube="cube_apply_heist_bank" id="Golden_Grin_Casino_+" intro_event="Play_pln_ca1_intro_01" max_bags="999" music="heist" player_style="generic">
+		<assets>
+			<asset name="bodybags_bag"/>
+			<asset name="bodybags_bag"/>
+		</assets>
+		<outro_event>
+			<value_node value="dentist_ca1_debrief_01"/>
+			<value_node value="dentist_ca1_debrief_02"/>
+		</outro_event>
+		<packages>
+			<value_node value="packages/kenaz"/>
+			<value_node value="levels/narratives/dentist/cas/world"/>
+			<value_node value="levels/narratives/dentist/cas/world_sounds"/>
+			<value_node value="levels/narratives/dentist/cas/world/world"/>
+			<value_node value="levels/narratives/dentist/cas/lights_only/lights_only"/>
+			<value_node value="levels/narratives/dentist/cas/editor_only/editor_only"/>
+			<value_node value="levels/narratives/dentist/cas/occluders/occluders"/>
+			<value_node value="levels/narratives/dentist/cas/level_art/level_art"/>
+			<value_node value="levels/narratives/dentist/cas/cover_points/cover_points"/>
+		</packages>
+		<preplanning mission_briefing_texture="guis/textures/pd2/pre_planning/mission_briefing_casino" total_budget="15">
+			<table map_height="2" map_width="1" map_x="-1.1" map_y="0" name_id="menu_pp_kenaz_loc_a" rotation="0" texture="guis/dlcs/kenaz/textures/pd2/pre_planning/kenaz_loc_a_df" x1="-6175" x2="4975" y1="-14450" y2="7850"/>
+			<table map_height="2" map_width="1" map_x="0" map_y="0" name_id="menu_pp_kenaz_loc_b" rotation="0" texture="guis/dlcs/kenaz/textures/pd2/pre_planning/kenaz_loc_b_df" x1="-6175" x2="5475" y1="-14450" y2="8350">
+				<custom_points>
+					<table icon="45" post_event="Play_pln_ca1_140" rotation="-90" text_id="menu_pp_info_kenaz_reception" to_upper="true" x="544" y="1181"/>
+					<table icon="45" post_event="Play_pln_ca1_141" rotation="-90" text_id="menu_pp_info_kenaz_lobby" to_upper="true" x="546" y="1223"/>
+					<table icon="45" post_event="Play_pln_ca1_142" rotation="-90" text_id="menu_pp_info_kenaz_pool_area" to_upper="true" x="229" y="1020"/>
+					<table icon="45" post_event="Play_pln_ca1_143" rotation="-90" text_id="menu_pp_info_kenaz_outside_lounge" to_upper="true" x="812" y="971"/>
+					<table icon="45" post_event="Play_pln_ca1_144" rotation="-90" text_id="menu_pp_info_kenaz_gambling_hall" to_upper="true" x="551" y="924"/>
+					<table icon="45" post_event="Play_pln_ca1_146" rotation="-90" text_id="menu_pp_info_kenaz_employees_only" to_upper="true" x="550" y="566"/>
+					<table icon="45" post_event="Play_pln_ca1_147" rotation="-90" text_id="menu_pp_info_kenaz_security_center" to_upper="true" x="546" y="625"/>
+				</custom_points>
+			</table>
+			<table map_height="1" map_width="0.5" map_x="0.85" map_y="-0.5" name_id="menu_pp_kenaz_loc_c" rotation="0" texture="guis/dlcs/kenaz/textures/pd2/pre_planning/kenaz_loc_c_df" x1="-200" x2="200" y1="-400" y2="400"/>
+			<default_plans entry_plan="kenaz_silent_entry" escape_plan="kenaz_limo_escape"/>
+			<start_location group="c" x="512" y="512" zoom="1"/>
+		</preplanning>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="dentist_ca1_cbf_01" contact="the_dentist" dlc="kenaz" id="Golden Grin Casino +" jc="70" load_screen="guis/dlcs/pic/textures/loading/job_casino">
+		<chain>
+			<table dlc="kenaz" level_id="Golden_Grin_Casino_+" type="e" type_id="heist_type_assault">
+				<mission_filter>
+					<value_node value="1"/>
+				</mission_filter>
+			</table>
+		</chain>
+		<contract_cost>
+			<value_node value="62000"/>
+			<value_node value="124000"/>
+			<value_node value="310000"/>
+			<value_node value="620000"/>
+			<value_node value="800000"/>
+			<value_node value="800000"/>
+			<value_node value="800000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="dentist_ca1_cnc_01_01"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_big1"/>
+			<value_node value="cn_big1"/>
+			<value_node value="cn_big1"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value="dentist_ca1_debrief_01"/>
+			<value_node value="dentist_ca1_debrief_02"/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<intro_event>
+			<value_node value="Play_pln_ca1_intro_01"/>
+			<value_node value="Play_pln_ca1_intro_02"/>
+		</intro_event>
+		<max_mission_xp>
+			<value_node value="67500"/>
+			<value_node value="67500"/>
+			<value_node value="67500"/>
+			<value_node value="67500"/>
+			<value_node value="67500"/>
+			<value_node value="67500"/>
+			<value_node value="67500"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="39250"/>
+			<value_node value="39250"/>
+			<value_node value="39250"/>
+			<value_node value="39250"/>
+			<value_node value="39250"/>
+			<value_node value="39250"/>
+			<value_node value="39250"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="10000"/>
+			<value_node value="20000"/>
+			<value_node value="50000"/>
+			<value_node value="100000"/>
+			<value_node value="130000"/>
+			<value_node value="130000"/>
+			<value_node value="130000"/>
+		</payout>
+	</narrative>
+</table>

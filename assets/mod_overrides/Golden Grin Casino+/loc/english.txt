@@ -1,0 +1,6 @@
+{
+    "heist_Golden Grin Casino +_brief" : "The Golden Grin Casino in Las Vegas is holding an item of loot that The Dentist wants. Get it out for him. \n \n Stealth is an option.",
+    "heist_Golden_Grin_Casino_+_brief" : "This is a big job. I'll talk you trough it as we go, but the skinny is this: The Golden Grin has a big vault. Big. I mean Benevolent big. Whether you sneak in, or go full assault, you're in for a though time. The Denstist won't say what we're lifting out of there. Being very cagey about that. He just said that once we're done, we're done. The contract is fullfilled... whatever that means. \n \n Stealth is an option.",
+    "heist_Golden Grin Casino +_name" : "Golden Grin Casino +",
+    "heist_Golden_Grin_Casino_+_name" : "Golden Grin Casino +"
+}

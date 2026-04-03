@@ -1,0 +1,6 @@
+{
+    "heist_Shacklethorne Auction +_brief" : "The Elephant has sent us a tip about an old mansion in Salem, where an auction is being held that contains an artifact we need for the device in the kitchen. \n \n Stealth is an option.",
+    "heist_Shacklethorne_Auction_+_brief" : "Ok, so we're going to Salem and steal the artifact from the fancy rich dwankie party, right before the auction starts, yeah? You're going in after dusk, and it's foggy and raining, so maybe try to do the whole thing quietly if you can. It's an old mansion, but the security systems are pretty solid, with many upgrades. Under the circumstances, the less attention we draw from the kerels, the better. But if you gotta go loud, then get it done chop chop. \n \n Stealth is an option.",
+    "heist_Shacklethorne Auction +_name" : "Shacklethorne Auction +",
+    "heist_Shacklethorne_Auction_+_name" : "Shacklethorne Auction +"
+}

@@ -1,0 +1,77 @@
+<table>
+	<world path="world" script_data_type="binary"/>
+	<continents path="continents" script_data_type="binary"/>
+	<mission path="mission" script_data_type="binary"/>
+	<nav_data path="nav_manager_data" script_data_type="binary"/>
+	<world_sounds path="world_sounds" script_data_type="binary"/>
+	<world_cameras path="world_cameras" script_data_type="binary"/>
+	<massunit path="massunit" reload="true"/>
+	<continent path="cover_points/cover_points" script_data_type="binary"/>
+	<mission path="cover_points/cover_points" script_data_type="binary"/>
+	<continent path="lights_only/lights_only" script_data_type="binary"/>
+	<mission path="lights_only/lights_only" script_data_type="binary"/>
+	<continent path="level_art/level_art" script_data_type="binary"/>
+	<mission path="level_art/level_art" script_data_type="binary"/>
+	<continent path="occluders/occluders" script_data_type="binary"/>
+	<mission path="occluders/occluders" script_data_type="binary"/>
+	<continent path="world/world" script_data_type="binary"/>
+	<mission path="world/world" script_data_type="binary"/>
+	<continent path="editor_only/editor_only" script_data_type="binary"/>
+	<mission path="editor_only/editor_only" script_data_type="binary"/>
+	<cover_data path="cover_data" script_data_type="binary"/>
+	<texture path="cube_lights/400015"/>
+	<texture path="cube_lights/400002"/>
+	<texture path="cube_lights/103082"/>
+	<texture path="cube_lights/400016"/>
+	<texture path="cube_lights/103141"/>
+	<texture path="cube_lights/103092"/>
+	<texture path="cube_lights/400017"/>
+	<texture path="cube_lights/102939"/>
+	<texture path="cube_lights/400023"/>
+	<texture path="cube_lights/103086"/>
+	<texture path="cube_lights/400034"/>
+	<texture path="cube_lights/400009"/>
+	<texture path="cube_lights/400024"/>
+	<texture path="cube_lights/400019"/>
+	<texture path="cube_lights/103148"/>
+	<texture path="cube_lights/103088"/>
+	<texture path="cube_lights/103099"/>
+	<texture path="cube_lights/400026"/>
+	<texture path="cube_lights/400037"/>
+	<texture path="cube_lights/400027"/>
+	<texture path="cube_lights/102944"/>
+	<texture path="cube_lights/102984"/>
+	<texture path="cube_lights/102942"/>
+	<texture path="cube_lights/102993"/>
+	<texture path="cube_lights/400006"/>
+	<texture path="cube_lights/400039"/>
+	<texture path="cube_lights/103097"/>
+	<texture path="cube_lights/400007"/>
+	<texture path="cube_lights/400003"/>
+	<texture path="cube_lights/400025"/>
+	<texture path="cube_lights/103084"/>
+	<texture path="cube_lights/400018"/>
+	<texture path="cube_lights/400010"/>
+	<texture path="cube_lights/103063"/>
+	<texture path="cube_lights/400008"/>
+	<texture path="cube_lights/400040"/>
+	<texture path="cube_lights/400020"/>
+	<texture path="cube_lights/400004"/>
+	<texture path="cube_lights/400028"/>
+	<texture path="cube_lights/400011"/>
+	<texture path="cube_lights/400013"/>
+	<texture path="cube_lights/400000"/>
+	<texture path="cube_lights/102925"/>
+	<texture path="cube_lights/103093"/>
+	<texture path="cube_lights/400041"/>
+	<texture path="cube_lights/400021"/>
+	<texture path="cube_lights/400005"/>
+	<texture path="cube_lights/400014"/>
+	<texture path="cube_lights/102908"/>
+	<texture path="cube_lights/103143"/>
+	<texture path="cube_lights/400001"/>
+	<texture path="cube_lights/400012"/>
+	<texture path="cube_lights/103101"/>
+	<texture path="cube_lights/103090"/>
+	<texture path="cube_lights/400022"/>
+</table>

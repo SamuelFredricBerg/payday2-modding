@@ -1,0 +1,13 @@
+{
+	"name" : "InstaWin",
+	"keybinds" : [
+	{
+		"keybind_id" : "iw",
+		"name" : "InstaWin",
+		"script_path" : "iw.lua",
+		"run_in_menu" : false,
+		"run_in_game" : true,
+		"localized" : false
+	}
+]
+}

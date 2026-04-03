@@ -1,0 +1,20 @@
+{
+    "name": "Infinite Ammo",
+    "description": "A toggleable Infinite ammo mod",
+    "author": "Axneef",
+    "contact": "https://next.nexusmods.com/profile/Axneef",
+    "version": "1.0",
+    "blt_version": 2,
+    "priority": 100,
+    "keybinds": [
+        {
+            "keybind_id": "a94a8fe5ccb19ba61c4c0873d391e987982fbbd3",
+            "name": "Activate/Deactivate Infinite ammo",
+            "description": "-",
+            "script_path": "infinite_ammo.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
+        }
+    ]
+}
