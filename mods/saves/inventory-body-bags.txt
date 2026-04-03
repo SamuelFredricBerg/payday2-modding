@@ -1,0 +1,1 @@
+{"start_amount":30,"max_amount":99}
