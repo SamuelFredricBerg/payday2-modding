@@ -1,5 +1,5 @@
 {
-	"name" : "COH",
+	"name" : "code-on-hud",
 	"description" : "Adds a panel that displays the last code written in chat to HUD.",
 	"author" : "Javgarag",
 	"color" : "186 26 26",

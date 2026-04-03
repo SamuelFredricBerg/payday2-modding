@@ -1,5 +1,5 @@
 {
-    "name": "Infinite Ammo",
+    "name": "infinite-ammo",
     "description": "A toggleable Infinite ammo mod",
     "author": "Axneef",
     "contact": "https://next.nexusmods.com/profile/Axneef",

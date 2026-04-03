@@ -6,7 +6,7 @@
 	
     "hooks" : [
 		{
-			"hook_id" : "lib/managers/DialogManager"
+			"hook_id" : "lib/managers/DialogManager",
 			"script_path" : "code.lua"
 		}
     ],
