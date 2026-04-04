@@ -1,5 +1,6 @@
 {
 	"name" : "insta-win",
+	"description" : "",
 	"keybinds" : [
 	{
 		"keybind_id" : "iw",
