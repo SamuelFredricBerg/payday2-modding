@@ -1,7 +1,7 @@
 dofile(ModPath .. "lua/_modannounce.lua")
 
-Hooks:Add("NetworkReceivedData",
-	"NetworkReceivedData_BLT_CarryStacker",
+Hooks:Add("NetworkReceivedData", 
+	"NetworkReceivedData_BLT_CarryStacker", 
 	function(sender, id, data)
 		local logger = BLT_CarryStacker.Log
 		if id == BLT_CarryStacker.NETWORK_MESSAGES.ALLOW_MOD then
@@ -10,8 +10,8 @@ Hooks:Add("NetworkReceivedData",
 			BLT_CarryStacker:SetRemoteHostSync(data == 1)
 		elseif id == BLT_CarryStacker.NETWORK_MESSAGES.REQUEST_MOD_USAGE then
 			logger("Received a request to use the mod")
-			LuaNetworking:SendToPeer(sender,
-				BLT_CarryStacker.NETWORK_MESSAGES.ALLOW_MOD,
+			LuaNetworking:SendToPeer(sender, 
+				BLT_CarryStacker.NETWORK_MESSAGES.ALLOW_MOD, 
 				BLT_CarryStacker:IsHostSyncEnabled() and 1 or 0)
 
 			if BLT_CarryStacker:IsHostSyncEnabled() then
@@ -21,9 +21,9 @@ Hooks:Add("NetworkReceivedData",
 			logger("Received a request to update mod settings")
 			local penalty_split = split(tostring(data), ":")
 			local carry_type = penalty_split[1]
-			if not carry_type or carry_type == "" then return end
+			if type(penalty_split[2]) ~= "number" then return end
+
 			local penalty = tonumber(penalty_split[2])
-			if not penalty then return end
 
 			BLT_CarryStacker:setHostMovementPenalty(carry_type, penalty)
 		end
@@ -34,7 +34,7 @@ function BLT_CarryStacker:syncConfigToClient(peer_id)
 	local logger = BLT_CarryStacker.Log
 	logger("Request to sync configuration to " .. tostring(peer_id))
 	for i,v in pairs(BLT_CarryStacker:getLocalMovementPenalties()) do
-		LuaNetworking:SendToPeer(peer_id,
+		LuaNetworking:SendToPeer(peer_id, 
 			BLT_CarryStacker.NETWORK_MESSAGES.SET_HOST_CONFIG, i .. ":" .. v)
 	end
 end
@@ -58,18 +58,10 @@ function ClientNetworkSession:on_load_complete()
 	logger("By default, setting the mod to not be allowed")
 	BLT_CarryStacker:HostDisallowsMod()
 	BLT_CarryStacker:SetRemoteHostSync(false)
-
-	logger("Resetting carry state for the new level")
-	BLT_CarryStacker:ResetCarryState()
-	BLT_CarryStacker:HudRefresh()
-
+	
 	logger("Requesting the host to allow the mod")
-	local session = managers.network and managers.network:session()
-	local server_peer = session and session:server_peer()
-	if server_peer then
-		LuaNetworking:SendToPeer(server_peer:id(),
-			BLT_CarryStacker.NETWORK_MESSAGES.REQUEST_MOD_USAGE, "request")
-	end
+	LuaNetworking:SendToPeer(managers.network:session():server_peer():id(), 
+		BLT_CarryStacker.NETWORK_MESSAGES.REQUEST_MOD_USAGE, "request")
 end
 
 function split(str, pat)

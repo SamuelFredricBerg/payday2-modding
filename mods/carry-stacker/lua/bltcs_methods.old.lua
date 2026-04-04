@@ -42,7 +42,7 @@ function BLT_CarryStacker:Save()
 end
 
 --[[
-    Reset settings to their default values.
+    Reset settings to their default values. 
 
     It does not persist the settings, but just modifies the in-memory
     ones.
@@ -92,7 +92,7 @@ end
 ]]
 function BLT_CarryStacker:setHostMovementPenalty(carry_type, penalty)
     local logger = BLT_CarryStacker.Log
-    logger("Request to set the host movement penalty of " ..
+    logger("Request to set the host movement penalty of " .. 
         tostring(carry_type) .. " to " .. tostring(penalty))
     if not self.settings.movement_penalties[carry_type] then
         logger("ERROR: There is no \"" .. tostring(carry_type) .. "\" type.")
@@ -106,7 +106,7 @@ end
 
     The returned value is in range [0.5, 1].
 
-    The weight will be calculated using either the local
+    The weight will be calculated using either the local 
     movement_penalties or the host movement_penalties accoding to the
     game state.
 
@@ -119,12 +119,12 @@ end
 ]]
 function BLT_CarryStacker:getWeightForType(carry_id, logger)
     logger = logger or BLT_CarryStacker.Log
-    logger("Request to get the weight of carry " ..
+    logger("Request to get the weight of carry " .. 
         tostring(carry_id))
     local carry_type = tweak_data.carry[carry_id].type
     local movement_penalty = nil
-    if LuaNetworking:IsMultiplayer()
-            and not LuaNetworking:IsHost()
+    if LuaNetworking:IsMultiplayer() 
+            and not LuaNetworking:IsHost() 
             and self:IsRemoteHostSyncEnabled() then
         logger("Using host's movement penalties")
         movement_penalty = self.host_settings.movement_penalties[carry_type]
@@ -132,8 +132,8 @@ function BLT_CarryStacker:getWeightForType(carry_id, logger)
         logger("Using local movement penalties")
         movement_penalty = self.settings.movement_penalties[carry_type]
     end
-    local result = movement_penalty ~= nil
-        and ((100 -movement_penalty) / 100)
+    local result = movement_penalty ~= nil 
+        and ((100 -movement_penalty) / 100) 
         or 1
     logger("The resulting weight is " .. tostring(result))
     return result
@@ -149,7 +149,7 @@ function BLT_CarryStacker:HostAllowsMod()
 end
 
 --[[
-    Set the mod to NOT be allowed in online games not hosted by this
+    Set the mod to NOT be allowed in online games not hosted by this 
     client
 ]]
 function BLT_CarryStacker:HostDisallowsMod()
@@ -173,7 +173,7 @@ function BLT_CarryStacker:GetModState()
         logger("The mod is configured to be used only on " ..
             "offline, but it is multiplayer. The mod is disabled")
         result = self.STATES.DISABLED
-    elseif self:IsStealthOnly()
+    elseif self:IsStealthOnly() 
             and not managers.groupai:state():whisper_mode() then
         logger("The mod is configured to be used only during " ..
             "stealth, and it is loud. The mod is disabled")
@@ -202,7 +202,7 @@ end
 
     setting_id is a string.
     state has to have a value valid for the given setting_id.
-    dest [optional] The table in which to set the setting.
+    dest [optional] The table in which to set the setting. 
         Default: BLT_CarryStacker.settings
 
     Example:
@@ -219,7 +219,7 @@ function BLT_CarryStacker:SetSetting(setting_id, state, dest)
 end
 
 function BLT_CarryStacker:SetMovPenaltySetting(setting_id, state)
-    BLT_CarryStacker:SetSetting(setting_id, state,
+    BLT_CarryStacker:SetSetting(setting_id, state, 
         BLT_CarryStacker.settings.movement_penalties)
     BLT_CarryStacker:RecalculateWeightOnMenuClose()
 end
@@ -235,7 +235,7 @@ function BLT_CarryStacker:IsRemoteHostSyncEnabled()
     logger("Request to return host_settings.remote_host_sync. " ..
         "Its value is " .. tostring(self.host_settings.remote_host_sync))
     return self.host_settings.remote_host_sync
-end
+end 
 
 function BLT_CarryStacker:IsHostSyncEnabled()
     local logger = BLT_CarryStacker.Log
@@ -274,7 +274,7 @@ function BLT_CarryStacker:CanCarry(carry_id, logger)
         return false
     end
     local check_weight = self.weight * self:getWeightForType(carry_id, logger)
-    logger("The current weight is " .. tostring(self.weight) ..
+    logger("The current weight is " .. tostring(self.weight) .. 
         " and the new weight is " .. tostring(check_weight))
     local result = check_weight >= 0.25
     logger("The player can carry a bag: " .. tostring(result))
@@ -332,8 +332,8 @@ function BLT_CarryStacker:HudRefresh()
         logger("There are items in the stack. Adding the "
             .. "corresponding special equipment icon")
         managers.hud:add_special_equipment({
-            id = "carrystacker",
-            icon = "pd2_loot",
+            id = "carrystacker", 
+            icon = "pd2_loot", 
             amount = #self.stack
         })
     end
@@ -341,7 +341,7 @@ end
 
 function BLT_CarryStacker:RecalculateWeightOnMenuClose()
     local logger = BLT_CarryStacker.Log
-    if #BLT_CarryStacker.stack > 0
+    if #BLT_CarryStacker.stack > 0 
             and not BLT_CarryStacker.closePauseMenuCallbacks.recalculateWeight then
         BLT_CarryStacker.closePauseMenuCallbacks.recalculateWeight = function()
             logger("Bag penalties have been changed " ..
@@ -351,22 +351,8 @@ function BLT_CarryStacker:RecalculateWeightOnMenuClose()
                 BLT_CarryStacker.weight = BLT_CarryStacker.weight
                     * BLT_CarryStacker:getWeightForType(cdata.carry_id)
             end
-            logger("Resulting weight is: " ..
+            logger("Resulting weight is: " .. 
                 tostring(BLT_CarryStacker.weight))
         end
     end
-end
-
---[[
-    Clear the carry stack and reset the movement weight to 1.
-
-    Call this when a new level loads so that stale carry state from the
-    previous heist does not carry over.
-]]
-function BLT_CarryStacker:ResetCarryState()
-    local logger = BLT_CarryStacker.Log
-    logger("Resetting carry state")
-    self.stack = {}
-    self.weight = 1
-    logger("Carry state reset")
 end
