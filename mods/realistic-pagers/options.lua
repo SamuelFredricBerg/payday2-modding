@@ -1,6 +1,6 @@
 _G.MorePagers = _G.MorePagers or {}
 MorePagers.ModPath = ModPath
-MorePagers.SaveFile = SavePath .. "more-pagers.json"
+MorePagers.SaveFile = SavePath .. "more-pagers.txt"
 MorePagers.OptionsMenu = MorePagers.ModPath .. "menu/options.txt"
 MorePagers.Settings = MorePagers.Settings or { enabled = true }
 
@@ -34,6 +34,9 @@ end)
 Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_MorePagers", function(menu_manager)
 	MenuCallbackHandler.MorePagers_SaveSettings = function(node)
 		MorePagers:Save()
+	end
+	MenuCallbackHandler.MorePagers_Enabled = function(self, item)
+		MorePagers.Settings.enabled = item:value() == "on"
 	end
 	MenuHelper:LoadFromJsonFile(MorePagers.OptionsMenu, MorePagers, MorePagers.Settings)
 end)

@@ -1,6 +1,6 @@
 _G.CarryInfo = _G.CarryInfo or {}
 CarryInfo.ModPath = ModPath
-CarryInfo.SaveFile = SavePath .. "carry-info.json"
+CarryInfo.SaveFile = SavePath .. "carry-info.txt"
 CarryInfo.OptionsMenu = CarryInfo.ModPath .. "menu/options.txt"
 CarryInfo.Settings = CarryInfo.Settings or { enabled = true }
 
@@ -34,6 +34,9 @@ end)
 Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_CarryInfo", function(menu_manager)
 	MenuCallbackHandler.CarryInfo_SaveSettings = function(node)
 		CarryInfo:Save()
+	end
+	MenuCallbackHandler.CarryInfo_Enabled = function(self, item)
+		CarryInfo.Settings.enabled = item:value() == "on"
 	end
 	MenuHelper:LoadFromJsonFile(CarryInfo.OptionsMenu, CarryInfo, CarryInfo.Settings)
 end)

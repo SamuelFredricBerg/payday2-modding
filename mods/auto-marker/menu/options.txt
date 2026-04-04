@@ -10,6 +10,7 @@
 			"id" : "am_enabled",
 			"title" : "am_enabled_title",
 			"description" : "am_enabled_desc",
+			"callback" : "AutoMarker_Enabled",
 			"value" : "enabled",
 			"default_value" : true
 		}

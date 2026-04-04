@@ -10,6 +10,7 @@
 			"id" : "ci_enabled",
 			"title" : "ci_enabled_title",
 			"description" : "ci_enabled_desc",
+			"callback" : "CarryInfo_Enabled",
 			"value" : "enabled",
 			"default_value" : true
 		}

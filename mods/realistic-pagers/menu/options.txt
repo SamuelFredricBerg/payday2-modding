@@ -11,6 +11,7 @@
 			"id" : "mp_enabled",
 			"title" : "mp_enabled_title",
 			"description" : "mp_enabled_desc",
+			"callback" : "MorePagers_Enabled",
 			"value" : "enabled",
 			"default_value" : true
 		}
