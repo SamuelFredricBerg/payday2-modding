@@ -1,20 +1,19 @@
 Key Item Outlines
 Created for the payday2-modding repository.
 
-Description: Adds persistent outlines to key carry items in the world
-(meth ingredients, cocaine bricks, keycards, canvas bags, tool bags, etc.)
-to make them easier to spot during heists.
+Description: Adds persistent outlines to key item world pickups
+(keycards and meth ingredient containers) to make them easier to spot
+during heists.
 
-This mod works by overriding the material_config files of the carry item
-visual units to include the CONTOUR render template flag, giving the models
-a permanent glowing outline — the same technique used by Gage Package Contours.
+This mod works by overriding the material_config files of the world pickup
+units with the CONTOUR render template flag, giving those models a permanent
+glowing yellow outline — the same technique used by Gage Package Contours.
 
 Install instructions:
 This folder should be placed inside "...PAYDAY 2/assets/mod_overrides/".
 
-Units covered:
-  npc_acc_loot_bag_1    – generic loot bag (meth, coke, keycards, gold, etc.)
-  npc_acc_cage_bag_1    – cage/cardboard-style bag
-  npc_acc_canvas_bag_1  – canvas duffel bag
-  npc_acc_tools_bag_1   – small tool bag
-  npc_acc_tools_bag_large_1 – large tool bag
+Units covered (world pickup models, not carry-on-back models):
+  gen_pku_keycard        – keycard pickup (keycards in various heists)
+  gen_pku_toolbag        – small tool bag (muriatic acid / meth ingredient)
+  gen_pku_toolbag_large  – large tool bag (caustic soda / meth ingredient)
+  gen_pku_cage_bag       – cage bag (hydrogen chloride / meth ingredient)
