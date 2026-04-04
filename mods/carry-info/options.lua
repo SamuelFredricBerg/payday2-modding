@@ -1,3 +1,7 @@
+local function val2bool(value)
+	return value == "on"
+end
+
 _G.CarryInfo = _G.CarryInfo or {}
 CarryInfo.ModPath = ModPath
 CarryInfo.SaveFile = SavePath .. "carry-info.txt"
@@ -36,7 +40,7 @@ Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_CarryInfo", function(m
 		CarryInfo:Save()
 	end
 	MenuCallbackHandler.CarryInfo_Enabled = function(self, item)
-		CarryInfo.Settings.enabled = item:value() == "on"
+		CarryInfo.Settings.enabled = val2bool(item:value())
 	end
 	MenuHelper:LoadFromJsonFile(CarryInfo.OptionsMenu, CarryInfo, CarryInfo.Settings)
 end)

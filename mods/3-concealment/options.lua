@@ -1,3 +1,7 @@
+local function val2bool(value)
+	return value == "on"
+end
+
 _G.ThreeConcealment = _G.ThreeConcealment or {}
 ThreeConcealment.ModPath = ModPath
 ThreeConcealment.SaveFile = SavePath .. "3-concealment.txt"
@@ -36,7 +40,7 @@ Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_ThreeConcealment", fun
 		ThreeConcealment:Save()
 	end
 	MenuCallbackHandler.ThreeConcealment_Enabled = function(self, item)
-		ThreeConcealment.Settings.enabled = item:value() == "on"
+		ThreeConcealment.Settings.enabled = val2bool(item:value())
 	end
 	MenuHelper:LoadFromJsonFile(ThreeConcealment.OptionsMenu, ThreeConcealment, ThreeConcealment.Settings)
 end)
