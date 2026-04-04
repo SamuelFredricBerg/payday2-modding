@@ -5,8 +5,8 @@ end
 
 local old_init = PlayerTweakData.init
 
-function PlayerTweakData:init()
-	old_init(self)
+function PlayerTweakData:init(tweak_data)
+	old_init(self, tweak_data)
 
 	if not RealisticPagers.Settings.enabled then
 		return
