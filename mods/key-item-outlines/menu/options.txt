@@ -1,0 +1,27 @@
+{
+	"menu_id"        : "kio_options_menu",
+	"parent_menu_id" : "blt_options",
+	"title"          : "kio_options_title",
+	"description"    : "kio_options_desc",
+	"back_callback"  : "KIO_SaveSettings",
+	"items" : [
+		{
+			"type"          : "toggle",
+			"id"            : "kio_enabled",
+			"title"         : "kio_enabled_title",
+			"description"   : "kio_enabled_desc",
+			"callback"      : "KIO_Enabled",
+			"value"         : "enabled",
+			"default_value" : true
+		},
+		{
+			"type"          : "toggle",
+			"id"            : "kio_all_carry",
+			"title"         : "kio_all_carry_title",
+			"description"   : "kio_all_carry_desc",
+			"callback"      : "KIO_AllCarry",
+			"value"         : "all_carry",
+			"default_value" : false
+		}
+	]
+}

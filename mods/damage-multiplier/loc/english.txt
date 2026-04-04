@@ -1,0 +1,8 @@
+{
+	"dm_options_title"      : "Damage Multiplier",
+	"dm_options_desc"       : "Configure Damage Multiplier settings.",
+	"dm_enabled_title"      : "Enabled",
+	"dm_enabled_desc"       : "Enable or disable the Damage Multiplier mod.",
+	"dm_multiplier_title"   : "Multiplier",
+	"dm_multiplier_desc"    : "How many times more damage the player deals with ranged and melee weapons (1 = no change, 2 = double damage, etc.)."
+}

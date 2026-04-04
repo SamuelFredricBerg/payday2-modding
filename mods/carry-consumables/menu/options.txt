@@ -1,0 +1,30 @@
+{
+	"menu_id"        : "cc_options_menu",
+	"parent_menu_id" : "blt_options",
+	"title"          : "cc_options_title",
+	"description"    : "cc_options_desc",
+	"back_callback"  : "CC_SaveSettings",
+	"items" : [
+		{
+			"type"          : "toggle",
+			"id"            : "cc_enabled",
+			"title"         : "cc_enabled_title",
+			"description"   : "cc_enabled_desc",
+			"callback"      : "CC_Enabled",
+			"value"         : "enabled",
+			"default_value" : true
+		},
+		{
+			"type"          : "slider",
+			"id"            : "cc_max_items",
+			"title"         : "cc_max_items_title",
+			"description"   : "cc_max_items_desc",
+			"callback"      : "CC_SetMaxItems",
+			"value"         : "max_items",
+			"default_value" : 4,
+			"min"           : 2,
+			"max"           : 10,
+			"step"          : 1
+		}
+	]
+}

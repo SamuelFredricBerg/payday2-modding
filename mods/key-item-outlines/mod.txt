@@ -1,0 +1,17 @@
+{
+	"name": "key-item-outlines",
+	"description": "",
+	"author": "",
+	"blt_version": 2,
+
+	"hooks": [
+		{
+			"hook_id": "lib/managers/menumanager",
+			"script_path": "options.lua"
+		},
+		{
+			"hook_id": "lib/units/interactions/interactionext",
+			"script_path": "interactionext.lua"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"menu_id"        : "dm_options_menu",
+	"parent_menu_id" : "blt_options",
+	"title"          : "dm_options_title",
+	"description"    : "dm_options_desc",
+	"back_callback"  : "DM_SaveSettings",
+	"items" : [
+		{
+			"type"          : "toggle",
+			"id"            : "dm_enabled",
+			"title"         : "dm_enabled_title",
+			"description"   : "dm_enabled_desc",
+			"callback"      : "DM_Enabled",
+			"value"         : "enabled",
+			"default_value" : true
+		},
+		{
+			"type"          : "slider",
+			"id"            : "dm_multiplier",
+			"title"         : "dm_multiplier_title",
+			"description"   : "dm_multiplier_desc",
+			"callback"      : "DM_SetMultiplier",
+			"value"         : "multiplier",
+			"default_value" : 2,
+			"min"           : 1,
+			"max"           : 20,
+			"step"          : 1
+		}
+	]
+}
