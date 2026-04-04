@@ -15,6 +15,12 @@ end
 
 if LuaNetworking:IsMultiplayer() and LuaNetworking:IsClient() then return end
 
+-- if LuaNetworking:IsHost() then
+--     if managers and managers.achievment then
+--         return --managers.achievment:set_achievements_disabled(true)
+--     end
+-- end
+
 
 AutoMarker.initial_range = 15000
 AutoMarker.followup_range = 8000
