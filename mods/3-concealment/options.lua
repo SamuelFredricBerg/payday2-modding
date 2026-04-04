@@ -1,6 +1,10 @@
+local function val2bool(value)
+	return value == "on"
+end
+
 _G.ThreeConcealment = _G.ThreeConcealment or {}
 ThreeConcealment.ModPath = ModPath
-ThreeConcealment.SaveFile = SavePath .. "3-concealment.json"
+ThreeConcealment.SaveFile = SavePath .. "3-concealment.txt"
 ThreeConcealment.OptionsMenu = ThreeConcealment.ModPath .. "menu/options.txt"
 ThreeConcealment.Settings = ThreeConcealment.Settings or { enabled = true }
 
@@ -34,6 +38,9 @@ end)
 Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_ThreeConcealment", function(menu_manager)
 	MenuCallbackHandler.ThreeConcealment_SaveSettings = function(node)
 		ThreeConcealment:Save()
+	end
+	MenuCallbackHandler.ThreeConcealment_Enabled = function(self, item)
+		ThreeConcealment.Settings.enabled = val2bool(item:value())
 	end
 	MenuHelper:LoadFromJsonFile(ThreeConcealment.OptionsMenu, ThreeConcealment, ThreeConcealment.Settings)
 end)

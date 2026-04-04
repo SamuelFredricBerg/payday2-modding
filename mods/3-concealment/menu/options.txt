@@ -10,6 +10,7 @@
 			"id" : "tc_enabled",
 			"title" : "tc_enabled_title",
 			"description" : "tc_enabled_desc",
+			"callback" : "ThreeConcealment_Enabled",
 			"value" : "enabled",
 			"default_value" : true
 		}

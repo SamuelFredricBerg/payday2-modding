@@ -1,10 +1,14 @@
-_G.MorePagers = _G.MorePagers or {}
-MorePagers.ModPath = ModPath
-MorePagers.SaveFile = SavePath .. "more-pagers.json"
-MorePagers.OptionsMenu = MorePagers.ModPath .. "menu/options.txt"
-MorePagers.Settings = MorePagers.Settings or { enabled = true }
+local function val2bool(value)
+	return value == "on"
+end
 
-function MorePagers:Load()
+_G.RealisticPagers = _G.RealisticPagers or {}
+RealisticPagers.ModPath = ModPath
+RealisticPagers.SaveFile = SavePath .. "realistic-pagers.txt"
+RealisticPagers.OptionsMenu = RealisticPagers.ModPath .. "menu/options.txt"
+RealisticPagers.Settings = RealisticPagers.Settings or { enabled = true }
+
+function RealisticPagers:Load()
 	local file = io.open(self.SaveFile, "r")
 	if file then
 		local ok, decoded = pcall(json.decode, file:read("*all"))
@@ -17,7 +21,7 @@ function MorePagers:Load()
 	end
 end
 
-function MorePagers:Save()
+function RealisticPagers:Save()
 	local file = io.open(self.SaveFile, "w+")
 	if file then
 		file:write(json.encode(self.Settings))
@@ -25,15 +29,18 @@ function MorePagers:Save()
 	end
 end
 
-MorePagers:Load()
+RealisticPagers:Load()
 
-Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_MorePagers", function(loc)
-	loc:load_localization_file(MorePagers.ModPath .. "loc/english.txt", false)
+Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_RealisticPagers", function(loc)
+	loc:load_localization_file(RealisticPagers.ModPath .. "loc/english.txt", false)
 end)
 
-Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_MorePagers", function(menu_manager)
-	MenuCallbackHandler.MorePagers_SaveSettings = function(node)
-		MorePagers:Save()
+Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_RealisticPagers", function(menu_manager)
+	MenuCallbackHandler.RealisticPagers_SaveSettings = function(node)
+		RealisticPagers:Save()
 	end
-	MenuHelper:LoadFromJsonFile(MorePagers.OptionsMenu, MorePagers, MorePagers.Settings)
+	MenuCallbackHandler.RealisticPagers_Enabled = function(self, item)
+		RealisticPagers.Settings.enabled = val2bool(item:value())
+	end
+	MenuHelper:LoadFromJsonFile(RealisticPagers.OptionsMenu, RealisticPagers, RealisticPagers.Settings)
 end)

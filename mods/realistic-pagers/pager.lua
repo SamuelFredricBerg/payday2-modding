@@ -1,6 +1,6 @@
-_G.MorePagers = _G.MorePagers or {}
-if not MorePagers.Settings then
-	MorePagers.Settings = { enabled = true }
+_G.RealisticPagers = _G.RealisticPagers or {}
+if not RealisticPagers.Settings then
+	RealisticPagers.Settings = { enabled = true }
 end
 
 local old_init = PlayerTweakData.init
@@ -8,7 +8,7 @@ local old_init = PlayerTweakData.init
 function PlayerTweakData:init()
 	old_init(self)
 
-	if not MorePagers.Settings.enabled then
+	if not RealisticPagers.Settings.enabled then
 		return
 	end
 

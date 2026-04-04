@@ -1,6 +1,10 @@
+local function val2bool(value)
+	return value == "on"
+end
+
 _G.AutoMarker = _G.AutoMarker or {}
 AutoMarker.ModPath = ModPath
-AutoMarker.SaveFile = SavePath .. "auto-marker.json"
+AutoMarker.SaveFile = SavePath .. "auto-marker.txt"
 AutoMarker.OptionsMenu = AutoMarker.ModPath .. "menu/options.txt"
 AutoMarker.Settings = AutoMarker.Settings or { enabled = true }
 
@@ -34,6 +38,9 @@ end)
 Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_AutoMarker", function(menu_manager)
 	MenuCallbackHandler.AutoMarker_SaveSettings = function(node)
 		AutoMarker:Save()
+	end
+	MenuCallbackHandler.AutoMarker_Enabled = function(self, item)
+		AutoMarker.Settings.enabled = val2bool(item:value())
 	end
 	MenuHelper:LoadFromJsonFile(AutoMarker.OptionsMenu, AutoMarker, AutoMarker.Settings)
 end)
