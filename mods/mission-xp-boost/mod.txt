@@ -2,6 +2,7 @@
 	"name" : "mission-xp-boost",
 	"description" : "",
 	"author" : "",
+	"blt_version" : 2,
 
 	"hooks" : [
 		{ 	

@@ -1,15 +1,15 @@
-local old_XILDIOI_init = InfamyNewTweakData.init
+local old_XILDIOI_init = InfamyTweakData.init
 
-function InfamyNewTweakData:init(tweak_data)
-old_XILDIOI_init(self, tweak_data)
-	local infamous_lootdrop_multiplier = 200
-	local infamous_readable_multiplier = "10000%"
-	local infamous_xp_multiplier_base = 50
-	local infamous_readable_xp_multiplier_base = "5000%"
-	local infamous_xp_multiplier_small = 75
-	local infamous_readable_xp_multiplier_small = "7500%"
-	local infamous_xp_multiplier_medium = 100
-	local infamous_readable_xp_multiplier_medium = "10000%"
-	local infamous_xp_multiplier_large = 115
-	local infamous_readable_xp_multiplier_large = "11500%"
+function InfamyTweakData:init()
+	old_XILDIOI_init(self)
+	for _, item in pairs(self.items) do
+		if item.upgrades then
+			if item.upgrades.infamous_lootdrop then
+				item.upgrades.infamous_lootdrop = 200
+			end
+			if item.upgrades.infamous_xp then
+				item.upgrades.infamous_xp = 100
+			end
+		end
+	end
 end
