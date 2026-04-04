@@ -12,7 +12,8 @@
             "script_path": "infinite_ammo.lua",
             "run_in_menu": false,
             "run_in_game": true,
-            "localized": false
+            "localized": false,
+            "default_key": "i"
         }
     ]
 }
