@@ -10,7 +10,8 @@
             "script_path": "code.lua",
             "run_in_menu": true,
             "run_in_game": true,
-            "localized": false
+            "localized": false,
+            "default_key": "o"
         }
     ]
 }

@@ -19,7 +19,8 @@
 			"script_path" : "keybind.lua",
 			"run_in_menu" : false,
 			"run_in_game" : true,
-			"localized" : false
+			"localized" : false,
+			"default_key" : "n"
 		}
 	]
 }
