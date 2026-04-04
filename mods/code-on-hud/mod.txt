@@ -13,11 +13,11 @@
 		},
 		{
 			"hook_id" : "lib/managers/chatmanager",
-			"script_path" : "core.lua"
+			"script_path" : "chat.lua"
 		},
 		{
 			"hook_id" : "lib/managers/hudmanager",
-			"script_path" : "core.lua"
+			"script_path" : "hud_update.lua"
 		}
 	],
 	"updates" : [
