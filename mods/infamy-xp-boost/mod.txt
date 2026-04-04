@@ -1,0 +1,13 @@
+{
+	"name" : "infamy-xp-boost",
+	"description" : "",
+	"author" : "",
+	"blt_version" : 2,
+
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/tweak_data/infamynewtweakdata",
+			"script_path" : "code.lua"
+		}
+	]
+}

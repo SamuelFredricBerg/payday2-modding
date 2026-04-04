@@ -1,0 +1,12 @@
+{
+	"name" : "mission-xp-boost",
+	"description" : "",
+	"author" : "",
+
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/managers/experiencemanager",
+			"script_path" : "code.lua"
+		}
+	]
+}
