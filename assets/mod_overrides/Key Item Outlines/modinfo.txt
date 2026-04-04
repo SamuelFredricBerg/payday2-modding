@@ -1,19 +1,19 @@
 Key Item Outlines
 Created for the payday2-modding repository.
 
-Description: Adds persistent outlines to key item world pickups
-(keycards and meth ingredient containers) to make them easier to spot
-during heists.
+Description: Adds persistent yellow outlines to keycard and meth ingredient
+pickups to make them easier to spot during heists.
 
-This mod works by overriding the material_config files of the world pickup
-units with the CONTOUR render template flag, giving those models a permanent
-glowing yellow outline — the same technique used by Gage Package Contours.
+This mod works by overriding the material_config files of the specific world
+pickup units with the CONTOUR render template flag — the same technique used
+by Gage Package Contours.
 
 Install instructions:
 This folder should be placed inside "...PAYDAY 2/assets/mod_overrides/".
 
-Units covered (world pickup models, not carry-on-back models):
-  gen_pku_keycard        – keycard pickup (keycards in various heists)
-  gen_pku_toolbag        – small tool bag (muriatic acid / meth ingredient)
-  gen_pku_toolbag_large  – large tool bag (caustic soda / meth ingredient)
-  gen_pku_cage_bag       – cage bag (hydrogen chloride / meth ingredient)
+Units covered:
+  gen_pku_keycard                – keycard (Golden Grin, Hotline Miami, etc.)
+  mad_prop_keycard               – keycard (The Mad Doctor / pd2_dlc_mad)
+  gen_pku_methlab_muriatic_acid  – muriatic acid meth ingredient
+  gen_pku_methlab_caustic_soda   – caustic soda meth ingredient
+  gen_pku_methlab_hydrogen_cloride – hydrogen chloride meth ingredient
