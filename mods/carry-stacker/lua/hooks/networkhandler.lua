@@ -21,9 +21,9 @@ Hooks:Add("NetworkReceivedData",
 			logger("Received a request to update mod settings")
 			local penalty_split = split(tostring(data), ":")
 			local carry_type = penalty_split[1]
-			if type(penalty_split[2]) ~= "number" then return end
-
+			if not carry_type or carry_type == "" then return end
 			local penalty = tonumber(penalty_split[2])
+			if not penalty then return end
 
 			BLT_CarryStacker:setHostMovementPenalty(carry_type, penalty)
 		end
@@ -58,10 +58,18 @@ function ClientNetworkSession:on_load_complete()
 	logger("By default, setting the mod to not be allowed")
 	BLT_CarryStacker:HostDisallowsMod()
 	BLT_CarryStacker:SetRemoteHostSync(false)
-	
+
+	logger("Resetting carry state for the new level")
+	BLT_CarryStacker:ResetCarryState()
+	BLT_CarryStacker:HudRefresh()
+
 	logger("Requesting the host to allow the mod")
-	LuaNetworking:SendToPeer(managers.network:session():server_peer():id(), 
-		BLT_CarryStacker.NETWORK_MESSAGES.REQUEST_MOD_USAGE, "request")
+	local session = managers.network and managers.network:session()
+	local server_peer = session and session:server_peer()
+	if server_peer then
+		LuaNetworking:SendToPeer(server_peer:id(),
+			BLT_CarryStacker.NETWORK_MESSAGES.REQUEST_MOD_USAGE, "request")
+	end
 end
 
 function split(str, pat)

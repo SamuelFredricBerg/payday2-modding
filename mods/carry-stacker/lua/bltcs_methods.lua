@@ -356,3 +356,17 @@ function BLT_CarryStacker:RecalculateWeightOnMenuClose()
         end
     end
 end
+
+--[[
+    Clear the carry stack and reset the movement weight to 1.
+
+    Call this when a new level loads so that stale carry state from the
+    previous heist does not carry over.
+]]
+function BLT_CarryStacker:ResetCarryState()
+    local logger = BLT_CarryStacker.Log
+    logger("Resetting carry state")
+    self.stack = {}
+    self.weight = 1
+    logger("Carry state reset")
+end
