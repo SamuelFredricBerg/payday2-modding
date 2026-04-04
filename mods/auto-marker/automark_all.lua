@@ -26,6 +26,7 @@ end
 AutoMarker.initial_range = 15000
 AutoMarker.followup_range = 8000
 AutoMarker.mark_duration = 60
+AutoMarker.update_interval = 5
 
 
 local function is_in_game()
@@ -42,6 +43,12 @@ Hooks:PostHook(GroupAIStateBase, "update", "AutoMarker_Update", function(self)
     if not is_in_game() or not managers.network:session() or not managers.network:session():are_peers_done_streaming() then
         return
     end
+
+    local t = managers.player:player_timer():time()
+    if AutoMarker._last_update_t and (t - AutoMarker._last_update_t) < AutoMarker.update_interval then
+        return
+    end
+    AutoMarker._last_update_t = t
 
 
     local player_unit = managers.player:player_unit()
