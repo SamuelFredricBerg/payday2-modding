@@ -4,14 +4,6 @@
 	"author" : "",
 	"priority" : 0,
 	"blt_version" : 2,
-	"updates" : [
-		{
-			"identifier" : "fhb",
-			"host" : {
-				"meta" : "https://gitlab.com/payday2-mods/updates/-/raw/master/fhb.json"
-			}
-		}
-	],
 	"persist_scripts" : [
 		{"global" : "FloatingHealthBars_initialized", "script_path" : "Core.lua"}
 	]

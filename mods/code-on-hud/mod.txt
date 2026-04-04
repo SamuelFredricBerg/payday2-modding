@@ -1,10 +1,7 @@
 {
 	"name" : "code-on-hud",
-	"description" : "Adds a panel that displays the last code written in chat to HUD.",
-	"author" : "Javgarag",
-	"color" : "186 26 26",
-	"contact" : "Discord: javgarag",
-	"version" : "1.2.3",
+	"description" : "",
+	"author" : "",
 	"blt_version" : 2,
 	"hooks" : [
 		{

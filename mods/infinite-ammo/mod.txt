@@ -1,9 +1,7 @@
 {
     "name": "infinite-ammo",
-    "description": "A toggleable Infinite ammo mod",
-    "author": "Axneef",
-    "contact": "https://next.nexusmods.com/profile/Axneef",
-    "version": "1.0",
+    "description": "",
+    "author": "",
     "blt_version": 2,
     "priority": 100,
     "keybinds": [
