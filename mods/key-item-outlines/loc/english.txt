@@ -1,8 +1,0 @@
-{
-	"kio_options_title"    : "Key Item Outlines",
-	"kio_options_desc"     : "Configure Key Item Outlines settings.",
-	"kio_enabled_title"    : "Enabled",
-	"kio_enabled_desc"     : "Enable or disable the Key Item Outlines mod.",
-	"kio_all_carry_title"  : "Outline All Carry Items",
-	"kio_all_carry_desc"   : "When enabled, all carriable items (including heavy bags) receive a persistent outline. When disabled, only light items such as keycards and meth ingredients are outlined."
-}
