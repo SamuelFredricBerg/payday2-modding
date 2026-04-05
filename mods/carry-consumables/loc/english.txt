@@ -1,8 +1,0 @@
-{
-	"cc_options_title"    : "Carry Consumables",
-	"cc_options_desc"     : "Configure Carry Consumables settings.",
-	"cc_enabled_title"    : "Enabled",
-	"cc_enabled_desc"     : "Enable or disable the Carry Consumables mod.",
-	"cc_max_items_title"  : "Max Items",
-	"cc_max_items_desc"   : "Maximum number of meth lab ingredients that can be carried at once."
-}
