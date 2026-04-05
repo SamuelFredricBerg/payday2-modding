@@ -1,6 +1,3 @@
--- Skip if carry-stacker is already loaded; it covers the same functionality.
-if _G.BLT_CarryStacker then return end
-
 _G.CarryConsumables = _G.CarryConsumables or {}
 CarryConsumables.stack = CarryConsumables.stack or {}
 
@@ -12,14 +9,17 @@ local function cc_max()
 	return CarryConsumables.Settings and CarryConsumables.Settings.max_items or 4
 end
 
--- Only manage light carry items (keycards, meth/coke ingredients, etc.).
--- Heavy bags (gold, paintings) are left to vanilla behaviour.
+-- Explicit whitelist of meth-lab ingredient carry IDs.
+-- Keycards are special equipment (bank_manager_key), not carry bags,
+-- so they are not included here.
+local CONSUMABLE_CARRY_IDS = {
+	nail_muriatic_acid     = true,
+	nail_caustic_soda      = true,
+	nail_hydrogen_chloride = true,
+}
+
 local function is_consumable_carry(carry_id)
-	if not carry_id or not tweak_data or not tweak_data.carry then return false end
-	local item = tweak_data.carry[carry_id]
-	if not item then return false end
-	local t = item.type
-	return t == "light" or t == "coke_light"
+	return carry_id ~= nil and CONSUMABLE_CARRY_IDS[carry_id] == true
 end
 
 local master_can_carry  = PlayerManager.can_carry

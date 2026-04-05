@@ -1,6 +1,3 @@
--- Skip if carry-stacker is already loaded; it already overrides these methods.
-if _G.BLT_CarryStacker then return end
-
 _G.CarryConsumables = _G.CarryConsumables or {}
 
 local function cc_enabled()
