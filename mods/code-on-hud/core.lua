@@ -139,12 +139,12 @@ function HUDCodeDisplay:update()
 			self._digit_red:set_text(r)
 			self._digit_red:set_visible(true)
 		end
-		if r ~= nil and g ~= '-' then
+		if g ~= nil and g ~= '-' then
 			self._code:set_visible(false)
 			self._digit_green:set_text(g)
 			self._digit_green:set_visible(true)
 		end
-		if r ~= nil and b ~= '-' then
+		if b ~= nil and b ~= '-' then
 			self._code:set_visible(false)
 			self._digit_blue:set_text(b)
 			self._digit_blue:set_visible(true)

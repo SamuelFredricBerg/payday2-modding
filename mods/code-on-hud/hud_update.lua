@@ -1,3 +1,5 @@
 Hooks:PostHook(HUDManager, "update", "update_coh", function(self)
-	self._hud_code_display:update()
+	if self._hud_code_display then
+		self._hud_code_display:update()
+	end
 end)

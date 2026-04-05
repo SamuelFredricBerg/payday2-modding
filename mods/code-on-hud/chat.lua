@@ -35,14 +35,16 @@ end
 Hooks:PostHook(HUDChat, "receive_message", "receive_message_coh", function(self, name, message, color, icon)
 	look_for_code(message)
 	if string.lower(message) == "close_code" then
-		managers.hud._hud_code_display.close_on_next_update = true
+		if managers.hud and managers.hud._hud_code_display then
+			managers.hud._hud_code_display.close_on_next_update = true
+		end
 	end
 end)
 
 Hooks:PostHook(ChatManager, "send_message", "send_message_coh", function(self, channel_id, sender, message)
 	look_for_code(message)
 	if string.lower(message) == "close_code" then
-		if managers.hud then
+		if managers.hud and managers.hud._hud_code_display then
 			managers.hud._hud_code_display.close_on_next_update = true
 		end
 	end
