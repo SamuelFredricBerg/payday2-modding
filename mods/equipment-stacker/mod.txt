@@ -1,6 +1,6 @@
 {
-	"name" : "Equipment Stacker",
-	"description" : "Lets you pickup more then one equipment.",
+	"name" : "equipment-stacker",
+	"description" : "",
 	"author" : "Author: Playhouse/Mayzone Collaborator: Berk Rider",
 	"contact" : "Discord: Mayzone#2647",
 	"blt_version" : 2,
