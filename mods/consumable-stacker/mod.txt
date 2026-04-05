@@ -1,0 +1,21 @@
+{
+	"name": "consumable-stacker",
+	"description": "",
+	"author": "",
+	"blt_version": 2,
+
+	"hooks": [
+		{
+			"hook_id": "lib/managers/menumanager",
+			"script_path": "code.lua"
+		},
+		{
+			"hook_id": "lib/units/interactions/interactionext",
+			"script_path": "interactionext.lua"
+		},
+		{
+			"hook_id": "lib/managers/playermanager",
+			"script_path": "playermanager.lua"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"menu_id"       : "cs_options_menu",
+	"parent_menu_id": "blt_options",
+	"title"         : "cs_options_menu_title",
+	"description"   : "cs_options_menu_desc",
+	"back_callback" : "CS_SaveSettings",
+	"items": [
+		{
+			"type"          : "toggle",
+			"id"            : "cs_enabled",
+			"title"         : "cs_enabled_title",
+			"description"   : "cs_enabled_desc",
+			"callback"      : "CS_SetEnabled",
+			"value"         : "enabled",
+			"default_value" : true
+		},
+		{
+			"type"          : "slider",
+			"id"            : "cs_max_stack",
+			"title"         : "cs_max_stack_title",
+			"description"   : "cs_max_stack_desc",
+			"callback"      : "CS_SetMaxStack",
+			"value"         : "max_stack",
+			"default_value" : 5,
+			"min"           : 1,
+			"max"           : 10,
+			"step"          : 1
+		}
+	]
+}

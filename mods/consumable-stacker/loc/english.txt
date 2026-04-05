@@ -1,0 +1,10 @@
+{
+	"cs_options_menu_title" : "Consumable Stacker",
+	"cs_options_menu_desc"  : "Stack keycards, meth ingredients and crowbars so you can carry and use several in a row.",
+
+	"cs_enabled_title" : "Enabled",
+	"cs_enabled_desc"  : "Enable or disable the Consumable Stacker mod.",
+
+	"cs_max_stack_title" : "Max Stack Size",
+	"cs_max_stack_desc"  : "Total number of consumable items you can hold at once (1 = vanilla, up to 10 = stacked extras)."
+}
