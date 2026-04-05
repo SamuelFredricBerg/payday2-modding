@@ -15,7 +15,9 @@ local _hefty={
 function EquipmentsTweakData:init()
 	_init(self)
 	for name, quantity in pairs(_hefty) do
-		self.specials[name].quantity=1
-		self.specials[name].max_quantity=quantity
+		if self.specials[name] then
+			self.specials[name].quantity=1
+			self.specials[name].max_quantity=quantity
+		end
 		end
 	end

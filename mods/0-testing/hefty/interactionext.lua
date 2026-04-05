@@ -2,8 +2,8 @@ local can_select=BaseInteractionExt.can_select
 local can_interact=BaseInteractionExt.can_interact
 local can_interact_multi=MultipleChoiceInteractionExt.can_interact
 
-function can_pickup(player, item)
-	return Network:is_server() and item
+local function can_pickup(player, item)
+	return item
 		and managers.player:player_unit()==player
 		and managers.player:can_pickup_equipment(item)
 	end
