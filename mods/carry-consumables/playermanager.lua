@@ -27,9 +27,6 @@ local master_set_carry  = PlayerManager.set_carry
 local master_drop_carry = PlayerManager.drop_carry
 
 -- Allow picking up another consumable item if the stack has room.
--- set_carry adds every picked-up item to the stack, so #stack already
--- reflects how many consumable items the player is carrying (including
--- the currently active one).  No need to add get_my_carry_data() here.
 function PlayerManager:can_carry(carry_id)
 	if not cc_enabled() or not is_consumable_carry(carry_id) then
 		return master_can_carry(self, carry_id)
@@ -37,49 +34,23 @@ function PlayerManager:can_carry(carry_id)
 	return #CarryConsumables.stack < cc_max()
 end
 
--- When the player picks up a carry item, record it in the stack so that
--- drop_carry can restore the previous item after the top one is dropped.
-function PlayerManager:set_carry(...)
-	master_set_carry(self, ...)
-	if cc_enabled() then
-		local cdata = self:get_my_carry_data()
-		if cdata and is_consumable_carry(cdata.carry_id) then
-			table.insert(CarryConsumables.stack, cdata)
-			CarryConsumables:refresh_hud()
-		end
+-- Push the carry ID onto the stack when a consumable item is picked up and carry-consumables is enabled.
+function PlayerManager:set_carry(carry_id, ...)
+	master_set_carry(self, carry_id, ...)
+	if cc_enabled() and is_consumable_carry(carry_id) then
+		table.insert(CarryConsumables.stack, carry_id)
 	end
 end
 
--- When the player drops a carry item, pop it from the stack.
--- If more items remain, restore the next one as the active carry.
+-- Pop the top of the stack on drop; if more items remain, restore the previous one.
 function PlayerManager:drop_carry(...)
 	master_drop_carry(self, ...)
 	if cc_enabled() and #CarryConsumables.stack > 0 then
 		table.remove(CarryConsumables.stack, #CarryConsumables.stack)
-		if #CarryConsumables.stack > 0 then
-			local cdata = CarryConsumables.stack[#CarryConsumables.stack]
-			master_set_carry(
-				self,
-				cdata.carry_id,
-				cdata.multiplier or 1,
-				cdata.dye_initiated,
-				cdata.has_dye_pack,
-				cdata.dye_value_multiplier
-			)
+		local prev = CarryConsumables.stack[#CarryConsumables.stack]
+		if prev then
+			-- Restore with safe defaults: multiplier 1, no dye pack.
+			master_set_carry(self, prev, 1, false, false, nil)
 		end
-		CarryConsumables:refresh_hud()
-	end
-end
-
--- Show the number of stacked items on the HUD using the special-equipment slot.
-function CarryConsumables:refresh_hud()
-	if not managers.hud then return end
-	managers.hud:remove_special_equipment("carry_consumables")
-	if #self.stack > 0 then
-		managers.hud:add_special_equipment({
-			id     = "carry_consumables",
-			icon   = "pd2_loot",
-			amount = #self.stack
-		})
 	end
 end
