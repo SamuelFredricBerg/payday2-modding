@@ -13,6 +13,15 @@
 			"callback" : "AutoMarker_Enabled",
 			"value" : "enabled",
 			"default_value" : true
+		},
+		{
+			"type" : "toggle",
+			"id" : "am_mark_civilians",
+			"title" : "am_mark_civilians_title",
+			"description" : "am_mark_civilians_desc",
+			"callback" : "AutoMarker_MarkCivilians",
+			"value" : "mark_civilians",
+			"default_value" : true
 		}
 	]
 }

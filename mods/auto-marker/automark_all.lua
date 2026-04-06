@@ -1,6 +1,6 @@
 _G.AutoMarker = _G.AutoMarker or {}
 if not AutoMarker.Settings then
-    AutoMarker.Settings = { enabled = true }
+    AutoMarker.Settings = { enabled = true, mark_civilians = true }
 end
 
 
@@ -63,35 +63,45 @@ Hooks:PostHook(GroupAIStateBase, "update", "AutoMarker_Update", function(self)
         if unit and alive(unit) then
             local unit_position = unit:position()
             local distance = mvector3.distance(player_position, unit_position)
+            local is_civilian = unit:base() and unit:base().is_civilian
 
-            if distance <= AutoMarker.initial_range and not unit:base().is_civilian then
-
-                unit:contour():add("mark_enemy", true, AutoMarker.mark_duration)
-
-                AutoMarker:mark_nearby_enemies(unit, self)
+            if distance <= AutoMarker.initial_range then
+                if not is_civilian then
+                    unit:contour():add("mark_enemy", true, AutoMarker.mark_duration)
+                    AutoMarker:mark_nearby(unit, self)
+                elseif AutoMarker.Settings.mark_civilians then
+                    unit:contour():add("mark_civilian", true, AutoMarker.mark_duration)
+                end
             end
         end
     end
 end)
 
 
-function AutoMarker:mark_nearby_enemies(marked_unit, state_base)
+-- Marks units (enemies and optionally civilians) within followup_range of a primary marked unit.
+function AutoMarker:mark_nearby(marked_unit, state_base)
     local marked_position = marked_unit:position()
-
 
     for u_key, u_data in pairs(state_base._police) do
         local unit = u_data.unit
         if unit and alive(unit) then
             local unit_position = unit:position()
             local distance = mvector3.distance(marked_position, unit_position)
+            local is_civilian = unit:base() and unit:base().is_civilian
 
-            if distance <= AutoMarker.followup_range and not unit:base().is_civilian then
-
-                unit:contour():add("mark_enemy", true, AutoMarker.mark_duration)
+            if distance <= AutoMarker.followup_range then
+                if not is_civilian then
+                    unit:contour():add("mark_enemy", true, AutoMarker.mark_duration)
+                elseif AutoMarker.Settings.mark_civilians then
+                    unit:contour():add("mark_civilian", true, AutoMarker.mark_duration)
+                end
             end
         end
     end
 end
+
+-- Keep old name as alias for backward compatibility.
+AutoMarker.mark_nearby_enemies = AutoMarker.mark_nearby
 
 
 if managers.job and managers.job:current_level_id() then

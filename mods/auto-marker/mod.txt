@@ -9,6 +9,10 @@
             "script_path": "options.lua"
         },
         {
+            "hook_id": "lib/units/contourext",
+            "script_path": "contour_setup.lua"
+        },
+        {
             "hook_id": "lib/managers/group_ai_states/groupaistatebase",
             "script_path": "automark_all.lua"
         },

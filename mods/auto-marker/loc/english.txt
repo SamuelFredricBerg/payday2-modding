@@ -2,5 +2,7 @@
 	"am_options_title" : "Auto Marker",
 	"am_options_desc" : "Configure Auto Marker settings.",
 	"am_enabled_title" : "Enabled",
-	"am_enabled_desc" : "Enable or disable the Auto Marker mod."
+	"am_enabled_desc" : "Enable or disable the Auto Marker mod.",
+	"am_mark_civilians_title" : "Mark Civilians",
+	"am_mark_civilians_desc" : "Mark nearby civilians with a yellow contour to distinguish them from hostiles."
 }

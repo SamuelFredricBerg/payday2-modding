@@ -6,7 +6,7 @@ _G.AutoMarker = _G.AutoMarker or {}
 AutoMarker.ModPath = ModPath
 AutoMarker.SaveFile = SavePath .. "auto-marker.txt"
 AutoMarker.OptionsMenu = AutoMarker.ModPath .. "menu/options.txt"
-AutoMarker.Settings = AutoMarker.Settings or { enabled = true }
+AutoMarker.Settings = AutoMarker.Settings or { enabled = true, mark_civilians = true }
 
 function AutoMarker:Load()
 	local file = io.open(self.SaveFile, "r")
@@ -41,6 +41,9 @@ Hooks:Add("MenuManagerInitialize", "MenuManagerInitialize_AutoMarker", function(
 	end
 	MenuCallbackHandler.AutoMarker_Enabled = function(self, item)
 		AutoMarker.Settings.enabled = val2bool(item:value())
+	end
+	MenuCallbackHandler.AutoMarker_MarkCivilians = function(self, item)
+		AutoMarker.Settings.mark_civilians = val2bool(item:value())
 	end
 	MenuHelper:LoadFromJsonFile(AutoMarker.OptionsMenu, AutoMarker, AutoMarker.Settings)
 end)
