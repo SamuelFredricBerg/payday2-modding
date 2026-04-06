@@ -2,6 +2,9 @@
 
 ## Ideas
 
+- [ ] Dodge increaser mod
+- [ ] Crit chance increase mod
+
 ## Fix
 
 
