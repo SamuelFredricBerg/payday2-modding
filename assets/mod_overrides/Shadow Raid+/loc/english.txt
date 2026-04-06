@@ -1,0 +1,5 @@
+{
+	"heist_contact_iranikak":"Akinari",
+	"heist_srpelevation2_name":"Shadow Raid +²",
+	"heist_srpelevation2_brief":"Have you ever heard about Shadow Raid? Ok so let's get everything from there, this time is going to be different!"
+}

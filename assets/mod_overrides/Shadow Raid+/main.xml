@@ -1,0 +1,106 @@
+<table min_lib_ver="4.5" name="Shadow Raid +²">
+	<AddFiles directory="assets">
+		<texture force="true" load="true" path="textures/srpelevation2_icon"/>
+	</AddFiles>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="Akinari" name_id="heist_contact_iranikak" package="packages/contact_bain"/>
+	<level ai_group_type="america" briefing_dialog="Play_pln_ko1_brf_01" cube="cube_apply_heist_bank" ghost_required="true" id="srpelevation2" intro_event="Play_pln_ko1_intro_01" max_bags="400" music="ghost" music_ext_start="suspense_1" player_style="generic">
+		<assets/>
+		<outro_event>
+			<value_node value="Play_pln_ko1_end_01"/>
+		</outro_event>
+		<packages>
+			<value_node value="levels/narratives/bain/shadow_raid/world"/>
+			<value_node value="levels/narratives/bain/shadow_raid/world_sounds"/>
+			<value_node value="levels/narratives/bain/shadow_raid/pc_only/pc_only"/>
+			<value_node value="levels/narratives/bain/shadow_raid/out/out"/>
+			<value_node value="levels/narratives/bain/shadow_raid/world/world"/>
+			<value_node value="levels/narratives/bain/shadow_raid/mt_temp/mt_temp"/>
+			<value_node value="levels/narratives/bain/shadow_raid/editor_only/editor_only"/>
+		</packages>
+		<preplanning min_zoom="0.4" mission_briefing_texture="guis/textures/pd2/pre_planning/mission_briefing_shadowraid" total_budget="8">
+			<table map_size="2" map_x="-0.6" map_y="-0.6" name_id="menu_pp_shadow_raid_loc_a" rotation="0" texture="guis/textures/pd2/pre_planning/shadow_raid_1" x1="-5650" x2="6850" y1="-7850" y2="4650">
+				<custom_points/>
+			</table>
+			<table map_size="1" map_x="1.1" map_y="-1.1" name_id="menu_pp_shadow_raid_loc_b" rotation="0" texture="guis/textures/pd2/pre_planning/shadow_raid_2" x1="-3950" x2="1550" y1="-6150" y2="-650">
+				<custom_points/>
+			</table>
+			<table map_size="1" map_x="1.1" map_y="0" name_id="menu_pp_shadow_raid_loc_c" rotation="0" texture="guis/textures/pd2/pre_planning/shadow_raid_3" x1="-3950" x2="1550" y1="-6150" y2="-650">
+				<custom_points/>
+			</table>
+			<table map_size="1" map_x="1.1" map_y="1.1" name_id="menu_pp_shadow_raid_loc_d" rotation="0" texture="guis/textures/pd2/pre_planning/shadow_raid_4" x1="-3950" x2="1550" y1="-6150" y2="-650">
+				<custom_points/>
+			</table>
+			<default_plans/>
+			<start_location group="a" x="2048" y="1024" zoom="0.8"/>
+		</preplanning>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="pln_ko1_cbf_01" contact="Akinari" hide_from_crimenet="false" icon="textures/srpelevation2_icon" id="srpelevation2" is_custom="true" jc="30" load_screen="guis/dlcs/pic/textures/loading/job_shadow_raid" region="street">
+		<chain>
+			<table level_id="srpelevation2" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="3e+006"/>
+			<value_node value="3e+006"/>
+			<value_node value="3e+006"/>
+			<value_node value="3e+006"/>
+			<value_node value="3e+006"/>
+			<value_node value="3e+006"/>
+			<value_node value="0"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="pln_ko1_cnc_01"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank1"/>
+			<value_node value="cn_branchbank2"/>
+			<value_node value="cn_branchbank3"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value=""/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1.5"/>
+			<value_node value="1.8"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="22000"/>
+			<value_node value="22000"/>
+			<value_node value="22000"/>
+			<value_node value="22000"/>
+			<value_node value="22000"/>
+			<value_node value="22000"/>
+			<value_node value="22000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="5500"/>
+			<value_node value="5500"/>
+			<value_node value="5500"/>
+			<value_node value="5500"/>
+			<value_node value="5500"/>
+			<value_node value="5500"/>
+			<value_node value="5500"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="10000"/>
+			<value_node value="20000"/>
+			<value_node value="30000"/>
+			<value_node value="40000"/>
+			<value_node value="80000"/>
+			<value_node value="80000"/>
+			<value_node value="80000"/>
+		</payout>
+	</narrative>
+</table>
