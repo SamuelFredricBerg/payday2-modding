@@ -59,16 +59,16 @@ end
 						game_state = "private"
 					else
 						-- Handle Steam RP Grouping
+						local session = managers.network:session()
 						if not Global.game_settings.single_player then
 							if managers.network.matchmake and managers.network.matchmake.lobby_handler then
 								group_key = managers.network.matchmake.lobby_handler:id()
 							end
 
-							local session = managers.network:session()
 							group_count = tostring(session and #session:all_peers() or 1)
 						end
 						
-						local num_players = managers.network:session():amount_of_alive_players()
+						local num_players = session and session:amount_of_alive_players() or 0
 
 						-- Determine game state
 						if self._current_rich_presence == "MPLobby" then
@@ -91,7 +91,7 @@ end
 							game_mode = "skirmish"
 							game_heist = self:get_current_job_id()
 							game_difficulty = string.format("%i/%i", managers.skirmish:current_wave_number() or 1, tweak_data and #tweak_data.skirmish.ransom_amounts or 9)
-						elseif managers.job:has_active_job() then								-- Heists
+						elseif managers.job and managers.job:has_active_job() then								-- Heists
 							game_heist = self:get_current_job_id()
 
 							if #(managers.job:current_job_chain_data() or {}) > 1 then
@@ -109,7 +109,7 @@ end
 						
 						else -- Game loc
 						
-						local job_data = managers.job:current_job_data()
+						local job_data = managers.job and managers.job:current_job_data()
 						local job_name = job_data and managers.localization:text(job_data.name_id)
 						
 						if managers.crime_spree and managers.crime_spree:is_active() then		-- Crime Spree
@@ -127,7 +127,7 @@ end
 							game_mode = "skirmish"
 							game_heist = job_name
 							game_difficulty = string.format("%i/%i", managers.skirmish:current_wave_number() or 1, tweak_data and #tweak_data.skirmish.ransom_amounts or 9)
-						elseif managers.job:has_active_job() then
+						elseif managers.job and managers.job:has_active_job() then
 							game_heist = job_name
 
 						if #(managers.job:current_job_chain_data() or {}) > 1 then
@@ -149,7 +149,7 @@ end
 				
 				local whisper_state = ""
 				if game_state == "playing" and RPDC.settings.game_state_status then
-					if managers and managers.groupai and not managers.skirmish:is_skirmish() then
+					if managers and managers.groupai and not (managers.skirmish and managers.skirmish:is_skirmish()) then
 						if managers.groupai:state():whisper_mode() then
 							whisper_state = " ("..RPDC.settings.game_state_stealth..") "
 						else
@@ -161,7 +161,7 @@ end
 				-- Any Day Any Heist compatibility (Random Heist Button works on its own)
 				-- Basically load level names for that when you're in preplanning/in-game
 				if _G.AnyDayAnyHeist and game_state ~= "lobby" and game_state ~= "private" then
-					local current_job = managers.job:current_job_id()
+					local current_job = managers.job and managers.job:current_job_id()
 					current_job = tostring(current_job)
 					if string.find(current_job, "dayselect_random_") then
 						if RPDC.settings.use_save_file == 1 or RPDC.settings.use_save_file == 3 then -- RPD Save File
@@ -231,7 +231,7 @@ end
 
 		function WinPlatformManager:get_current_job_id()
 			local RPDC = _G.RichPresenceDefinitive
-			local job_id = managers.job:current_job_id()
+			local job_id = managers.job and managers.job:current_job_id()
 			if job_id == nil then
 				return self:get_current_level_id() -- in case that tutorial level was launched
 			end
