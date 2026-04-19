@@ -61,6 +61,7 @@
       "c4": true,
       "caustic_soda": true,
       "circle_cutter": false,
+      "collector_hand": false,
       "crowbar": false,
       "evidence": false,
       "gas": true,

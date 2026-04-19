@@ -118,9 +118,9 @@ if not loaded then
 			["help"] = {reuse = true, amount_to_pickup = 1}
 		}
 	}
-	c.whitelist["chrome_skull"] = {enable = loc.config.stacker.chrome_skull, max_amount = 1}
-	c.whitelist["soda"] = {enable = loc.config.stacker.soda, max_amount = 1}
-	c.whitelist["tool"] = {enable = loc.config.stacker.tool, max_amount = 1}
+	c.whitelist["chrome_skull"] = {enable = loc.config.collector.chrome_skull, max_amount = 1}
+	c.whitelist["soda"] = {enable = loc.config.collector.soda, max_amount = 1}
+	c.whitelist["tool"] = {enable = loc.config.collector.tool, max_amount = 1}
 	c.whitelist["hand"] = {enable = loc.config.stacker.collector_hand, max_amount = 1}
 	
 	function c:count_table(t)
@@ -255,7 +255,7 @@ if not loaded then
 		
 		if self:check_host_only() then
 			local matchmake = managers.network and managers.network.matchmake and managers.network.matchmake.lobby_handler
-			local filter_permissions = matchmake and matchmake:get_lobby_data() ~= nil and matchmake:get_lobby_data().permission
+			local filter_permissions = matchmake and matchmake:get_lobby_data("permission")
 			local peer_allows_mod = self:peer_allows_mod()
 			if singleplayer or (filter_permissions and tonumber(filter_permissions) ~= 1) or peer_allows_mod then
 				return true
